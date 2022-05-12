@@ -1,0 +1,220 @@
+@import "mixins";
+@import "variables";
+
+
+/*HAGO PAGINA NOSOTROS*/
+
+.bodynosotros{
+    background-image: none;
+    background-color: #F9E4D4;
+}
+
+.section-nuestrahistoria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 250px 250px 250px;
+    grid-template-areas:
+    "h2-historia h2-historia h2-historia"
+    "primerospasos primerospasos img-pasos"
+    "img-gente nuestragente nuestragente"
+    "produccion produccion img-produccion "
+    "galery row galery1"
+    "h2-linea h2-linea h2-linea"
+    "carouselaños carouselaños carouselaños";
+    gap: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.h2-historia {
+    grid-area: h2-historia;
+    color: $colorsecundario;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.h2-primerospasos, .h2-nuestragente, .h2-produccion{
+    display: flex;
+    color: $colorprimario;
+    padding: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+}
+
+/* ARREGLO GRID AREA */
+
+.h2-linea{
+    grid-area: h2-linea;
+}
+
+.primerospasos {
+    grid-area: primerospasos;
+}
+
+.carouselaños{
+    grid-area: carouselaños;
+}
+
+.img-pasos {
+    grid-area: img-pasos;
+}
+
+.nuestragente{
+    grid-area: nuestragente;
+}
+
+.img-gente{
+    grid-area: img-gente;
+}
+
+.produccion {
+    grid-area: produccion;
+}
+
+.img-produccion{
+    grid-area: img-produccion;
+}
+
+.row{
+    grid-area: row;
+}
+
+.galery{
+    grid-area: galery;
+}
+
+.galery1{
+    grid-area: galery1;
+}
+
+
+/* IMAGENES INTRO NOSOTROS */
+.img-gente{
+    width: 300px;
+    height: 250px;
+}
+
+.img-pasos{
+    width: 300px;
+    height: 250px;
+}
+.img-produccion{
+    width: 300px;
+    height: 250px;
+}
+
+/* DIVS CARDS INTRO */
+
+.primerospasos{
+    @include card-nosotros (#d67d3e2b, 100%, 10px, Verdana, 5%);
+    margin-left: 5%;
+    p{
+        @include card-nosotros-p (verdana, justify, 1rem, 15px);
+    }
+}
+
+.nuestragente{
+    @include card-nosotros (#d67d3e2b, 100%, 10px, Verdana, 5%);
+    margin-right: 5%;
+    p{
+        @include card-nosotros-p (verdana, justify, 1rem, 15px)
+    }
+}
+
+.produccion{
+    @include card-nosotros (#d67d3e2b, 100%, 10px, Verdana, 5%);
+    margin-left: 5%;
+    p{
+        @include card-nosotros-p (verdana, justify, 1rem, 15px)
+    }
+}
+
+#imgbod{
+    width: 100%;
+}
+
+
+
+#imgbod:hover{
+    transform: scale(2.5);
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+
+
+.row{
+    display: flex;
+    padding: 5px;
+}
+
+.galery{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+.galery1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+.h2-row{
+    text-align: center;
+}
+#p-row{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+#p-row1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+
+/* carousel timeline */
+.h2-linea{
+    margin-top: 10%;
+    color: #470D21;
+}
+
+#carouseltime{
+    height: 500px;
+    width: 500px;
+}
+
+.h4-carousel{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: $colorprimario;
+    background-color: #f9e4d448;
+}
+
+#titulo-h5{
+    font-size: 2rem;
+    color: $colorprimario;
+    background-color:#f9e4d448 ;
+}
+
+#p-carousel{
+    background-color:#f9e4d448;
+    color: #470D21;
+}
+
+#prev, #next{
+    background-color: #9C0F48;
+    position: absolute;
+}

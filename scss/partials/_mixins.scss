@@ -1,0 +1,17 @@
+@mixin card-nosotros ($bg-color, $width, $padding, $ffamily, $margin-left){
+    background-color: $bg-color;
+    width: $width;
+    padding: $padding;
+    font-family: $ffamily;
+}
+
+
+@mixin card-nosotros-p ($ff, $textalign, $font-size, $padding){
+    font-family: $ff;
+    text-align: $textalign;
+    font-size: $font-size;
+    padding: $padding;
+}
+
+
+

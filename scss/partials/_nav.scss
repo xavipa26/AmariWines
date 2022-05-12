@@ -1,0 +1,48 @@
+@import "variables";
+
+/* NAV PARA TODAS LAS PAGINAS */
+.menu-index{
+    background-color: $colorprimario;
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.conteiner-index a{
+    color: white;
+}
+
+#nav-inicio{
+    font-size: 1.4rem;
+}
+/* MENU DROPDOWN INDEX */
+
+.conteiner-index #index-dropdown{
+    color: rgb(0, 0, 0);
+}
+
+.conteiner-index #index-dropdown:hover{
+    color: #ffffff;
+    background-color: $colorprimario;
+}
+
+.conteiner-index a:hover{
+    display: flexbox;
+    justify-content:space-between;
+    color: $colorsecundario;
+}
+
+/* BUTTONS SEARCH INDEX */
+.buton-search{
+    color: $colorterciario;
+    border: 2px solid $colorterciario;
+}
+.buton-search:hover{
+    background-color: $colorsecundario;
+    border: 2px solid $colorterciario;
+}
+
+/* button colapse */
+
+#navicon{
+    height: 2.5rem;
+}

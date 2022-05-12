@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurante y tienda boutique de vinos en Mendoza, Argentina">
+    <meta name="keywords" content="Vino Bodega Restaurante Mendoza">
+    <title>Restaurante</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/908e4b0575.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body class="body4">
+    <audio src="../sound/sound.mp4" autoplay loop></audio>
+    <header>
+        <nav class="navbar navbar-expand-lg  menu-index">
+            <div class="container-fluid conteiner-index">
+                <a class="navbar-brand" id="nav-inicio" href="../index.html">
+                    <img src="../Images/Grand.png" alt="" width="50" height="42"
+                        class="d-inline-block align-text-center ">
+                    Inicio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span> <img id="navicon" src="../Images/nav_icon.png" alt="NavIcon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../Pages/Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../Pages/Bodega.html">Bodega</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tienda
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" id="index-dropdown"
+                                        href="../Pages/Tienda.html">Certificaciones</a></li>
+                                <li><a class="dropdown-item" id="index-dropdown"
+                                        href="../Pages/Tienda.html#malbec">Malbec</a></li>
+                                <li><a class="dropdown-item" id="index-dropdown"
+                                        href="../Pages/Tienda.html#cabernet">Cabernet Sauvignon</a></li>
+                                <li><a class="dropdown-item" id="index-dropdown" href="../Pages/Tienda.html#pinot">Pinot
+                                        noir</a></li>
+                                <li><a class="dropdown-item" id="index-dropdown"
+                                        href="../Pages/Tienda.html#chardonnay">Chardonnay </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Restaurante
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" id="index-dropdown"
+                                        href="../Pages/Restaurante.html#conocenos">Conocenos</a></li>
+                                <li><a class="dropdown-item" id="index-dropdown"
+                                        href="../Pages/Restaurante.html#menu">Menú</a></li>
+                                <li><a class="dropdown-item" id="index-dropdown"
+                                        href="../Pages/Restaurante.html#reserva">Reservá Ya</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../Pages/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="¿Qúe desea buscar?"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success buton-search" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="conteiner-resto" id="conocenos">
+            <div class="resto">
+                <h1>Nuestro Restaurante</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis veniam dolorum temporibus,
+                    explicabo, hic perspiciatis ab totam repellendus deleniti, libero iste cumque tempore ullam. Fuga
+                    nihil accusantium similique placeat consequuntur, enim sunt dolores, ipsum id odit cumque libero
+                    nostrum, alias numquam voluptatum veniam fugit excepturi eveniet perspiciatis ipsam ullam! Fugit,
+                    modi optio! Enim, deleniti dolore. Animi eveniet et omnis harum doloremque esse quo, error eius
+                    voluptates alias qui, at eligendi amet porro facere adipisci id nihil maxime odio consequuntur natus
+                    tenetur molestias corporis explicabo? Veritatis adipisci architecto ipsum repellat dicta magnam
+                    nesciunt repellendus et, natus corrupti iure libero animi fugit.</p>
+                <video src="../video/resto.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+
+
+        <!--ARMO UN ACORDEON DETALLANDO COMODITIES-->
+
+
+        <div class="accordion accordion-flush"  id="acordeon">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed button-acordeon" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Restaurante interior
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body div-acordeonbody">
+                    <h5>Contamos con las mejores comodidades para que disfrute de una velada extraordinaria, entre ellas:</h5>
+                        <li>Ambiente climatizado</li>
+                        <li>Amplios ventanales</li>
+                        <li> 3 cheff y 14 mozos</li>
+                        <li> Vajilla de primera calidad</li>
+                        <li>Atención a mesa en toda su estadía</li>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed button-acordeon" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Restaurante exterior
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body div-acordeonbody">
+                        <h5>Contamos con las mejores comodidades para que disfrute de una velada extraordinaria, entre ellas:</h5>
+                        <li>Ambiente climatizado</li>
+                        <li>Excelente vista hacia viñedos y laguna</li>
+                        <li> 3 cheff y 14 mozos</li>
+                        <li>Mesas de madera roble francés</li>
+                        <li>Atención a mesa en toda su estadía</li>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed button-acordeon" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Salón de relax
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body div-acordeonbody">
+                        <h5>Contamos con las mejores comodidades para que disfrute de una velada extraordinaria, entre ellas:</h5>
+                        <li>Ambiente climatizado</li>
+                        <li>Vistas panorámicas a viñedos</li>
+                        <li>Infusión y delicias de la pastelería libres</li>
+                        <li>Música de Jazz en vivo</li>
+                        <li>Sillones de relajación</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="parent" id="menu">
+            <h1>Nuestro menú</h1>
+                <img class="zoom" src="../Images/menu.webp" alt="">
+            </div>
+
+        </div>
+    </main>
+
+    <div data-aos="flip-up" class="conteiner-reservaresto">
+        <h1 class="titulo-reserva" id="reserva"re>Reservá</h1>
+            <form class="formulario-reserva">
+                <fieldset class="formulario-reserva-fieldset">
+                    <label class="label-nombreresto" for="nombre">Nombre reserva:</label>
+                    <input type="text" id="nombreresto" name="nombre">
+                    <label class="label-emailresto" for="email">Email:</label>
+                    <input type="email" id="emailresto" name="email">
+                    <label class="label-telefonoresto" for="telefono">Número de teléfono:</label>
+                    <input type="text" id="telefonoresto" name="telefono">
+                    <label class="label-personasresto" for="personas">Ingrese la cantidad de personas:</label>
+                    <input type="number" id="personasresto" name="personasresto">
+                    <label class="label-fecharesto" for="fecha">Ingrese la fecha de reserva:</label>
+                    <input type="date" name="fecharesto" id="fecharesto">
+                    <input type="submit" name="enviar" id="enviar1" </fieldset>
+            </form>
+    </div>
+
+
+
+
+
+
+
+
+    <footer class="page-footer font-small teal pt-4 fixed-bottom footdown1">
+        <div class="container-fluid text-center text-md-left text-index">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase font-weight-bold">Sobre nosotros</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla,
+                        nihil
+                        repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam
+                        recusandae
+                        harum esse fugiat. Itaque, culpa?</p>
+
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-6 mb-md-0 mb-3">
+                    <h5 class="text-uppercase font-weight-bold">Nuestras redes</h5>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 footer-down">© 2022 Copyright:
+            <a href="#"> Amari Wines</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

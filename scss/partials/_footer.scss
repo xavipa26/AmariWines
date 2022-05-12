@@ -1,0 +1,40 @@
+@import "variables";
+
+
+/*footer para todas las paginas*/
+
+.footdown1{
+    position: relative;
+    background-color: $colorsecundario;
+    margin-top: 5%;
+}
+
+.text-index{
+    color: aliceblue;
+}
+
+.imgindex{
+    height: 50%;
+}
+
+.footer-down{
+    background-color:$colorprimario;
+    color: aliceblue;
+}
+
+.footer-down a{
+    background-color:$colorprimario;
+    color: $colorsecundario;
+}
+
+.red-social a{
+    color: aliceblue;
+    width: 2rem;
+    
+}
+
+.red-social a:hover{
+    color: $colorprimario;
+    width: 2rem;
+    
+}

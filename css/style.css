@@ -1,0 +1,673 @@
+@charset "UTF-8";
+/* NAV PARA TODAS LAS PAGINAS */
+.menu-index {
+  background-color: #470D21;
+  display: flex;
+  font-size: 1.1rem; }
+
+.conteiner-index a {
+  color: white; }
+
+#nav-inicio {
+  font-size: 1.4rem; }
+
+/* MENU DROPDOWN INDEX */
+.conteiner-index #index-dropdown {
+  color: black; }
+
+.conteiner-index #index-dropdown:hover {
+  color: #ffffff;
+  background-color: #470D21; }
+
+.conteiner-index a:hover {
+  display: flexbox;
+  justify-content: space-between;
+  color: #9C0F48; }
+
+/* BUTTONS SEARCH INDEX */
+.buton-search {
+  color: #F9E4D4;
+  border: 2px solid #F9E4D4; }
+
+.buton-search:hover {
+  background-color: #9C0F48;
+  border: 2px solid #F9E4D4; }
+
+/* button colapse */
+#navicon {
+  height: 2.5rem; }
+
+/*footer para todas las paginas*/
+.footdown1 {
+  position: relative;
+  background-color: #9C0F48;
+  margin-top: 5%; }
+
+.text-index {
+  color: aliceblue; }
+
+.imgindex {
+  height: 50%; }
+
+.footer-down {
+  background-color: #470D21;
+  color: aliceblue; }
+
+.footer-down a {
+  background-color: #470D21;
+  color: #9C0F48; }
+
+.red-social a {
+  color: aliceblue;
+  width: 2rem; }
+
+.red-social a:hover {
+  color: #470D21;
+  width: 2rem; }
+
+/* CARDS INDEX */
+.cards-index {
+  background-color: #F9E4D4;
+  padding: 1%;
+  margin: 0.5%;
+  margin-top: 3%;
+  border: 0, 2px solid #470D21;
+  box-shadow: 0px 1px 10px black; }
+  .cards-index:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 20px black;
+    transform: translateY(-1%);
+    transition: all 700ms ease; }
+  .cards-index button {
+    display: flex;
+    align-self: center; }
+  .cards-index h5 {
+    color: #470D21; }
+
+.butoncard-search {
+  width: 50%;
+  justify-content: center;
+  color: #F9E4D4;
+  border: 2px solid #470D21;
+  background-color: #470D21; }
+  .butoncard-search:hover {
+    background-color: #9C0F48;
+    border: 2px solid #F9E4D4; }
+
+/*HAGO PAGINA NOSOTROS*/
+.bodynosotros {
+  background-image: none;
+  background-color: #F9E4D4; }
+
+.section-nuestrahistoria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 250px 250px 250px;
+  grid-template-areas: "h2-historia h2-historia h2-historia" "primerospasos primerospasos img-pasos" "img-gente nuestragente nuestragente" "produccion produccion img-produccion " "galery row galery1" "h2-linea h2-linea h2-linea" "carouselaños carouselaños carouselaños";
+  gap: 50px;
+  justify-items: center;
+  align-items: center; }
+
+.h2-historia {
+  grid-area: h2-historia;
+  color: #9C0F48;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+  margin-top: 15%;
+  margin-bottom: 10%; }
+
+.h2-primerospasos, .h2-nuestragente, .h2-produccion {
+  display: flex;
+  color: #470D21;
+  padding: 1%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  justify-content: center; }
+
+/* ARREGLO GRID AREA */
+.h2-linea {
+  grid-area: h2-linea; }
+
+.primerospasos {
+  grid-area: primerospasos; }
+
+.carouselaños {
+  grid-area: carouselaños; }
+
+.img-pasos {
+  grid-area: img-pasos; }
+
+.nuestragente {
+  grid-area: nuestragente; }
+
+.img-gente {
+  grid-area: img-gente; }
+
+.produccion {
+  grid-area: produccion; }
+
+.img-produccion {
+  grid-area: img-produccion; }
+
+.row {
+  grid-area: row; }
+
+.galery {
+  grid-area: galery; }
+
+.galery1 {
+  grid-area: galery1; }
+
+/* IMAGENES INTRO NOSOTROS */
+.img-gente {
+  width: 300px;
+  height: 250px; }
+
+.img-pasos {
+  width: 300px;
+  height: 250px; }
+
+.img-produccion {
+  width: 300px;
+  height: 250px; }
+
+/* DIVS CARDS INTRO */
+.primerospasos {
+  background-color: #d67d3e2b;
+  width: 100%;
+  padding: 10px;
+  font-family: Verdana;
+  margin-left: 5%; }
+  .primerospasos p {
+    font-family: verdana;
+    text-align: justify;
+    font-size: 1rem;
+    padding: 15px; }
+
+.nuestragente {
+  background-color: #d67d3e2b;
+  width: 100%;
+  padding: 10px;
+  font-family: Verdana;
+  margin-right: 5%; }
+  .nuestragente p {
+    font-family: verdana;
+    text-align: justify;
+    font-size: 1rem;
+    padding: 15px; }
+
+.produccion {
+  background-color: #d67d3e2b;
+  width: 100%;
+  padding: 10px;
+  font-family: Verdana;
+  margin-left: 5%; }
+  .produccion p {
+    font-family: verdana;
+    text-align: justify;
+    font-size: 1rem;
+    padding: 15px; }
+
+#imgbod {
+  width: 100%; }
+
+#imgbod:hover {
+  transform: scale(2.5);
+  transition: all 400ms ease;
+  cursor: pointer; }
+
+.row {
+  display: flex;
+  padding: 5px; }
+
+.galery {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  text-align: justify; }
+
+.galery1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  text-align: justify; }
+
+.h2-row {
+  text-align: center; }
+
+#p-row {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify; }
+
+#p-row1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify; }
+
+.column {
+  flex: 25%;
+  padding: 5px; }
+
+/* carousel timeline */
+.h2-linea {
+  margin-top: 10%;
+  color: #470D21; }
+
+#carouseltime {
+  height: 500px;
+  width: 500px; }
+
+.h4-carousel {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  color: #470D21;
+  background-color: #f9e4d448; }
+
+#titulo-h5 {
+  font-size: 2rem;
+  color: #470D21;
+  background-color: #f9e4d448; }
+
+#p-carousel {
+  background-color: #f9e4d448;
+  color: #470D21; }
+
+#prev, #next {
+  background-color: #9C0F48;
+  position: absolute; }
+
+/* MEDIA QUERIS */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    padding: 5px; } }
+
+@media screen and (max-width: 768px) {
+  /* acomodo sección nostros */
+  .section-nuestrahistoria {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  #carouseltime {
+    height: 300px;
+    width: 100%; }
+  .section-nuestrahistoria h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .bodynosotros {
+    width: 100%; }
+  #imgbod:hover {
+    transform: scale(1);
+    transition: all 400ms ease;
+    cursor: pointer; }
+  .vinos-certificacion {
+    display: flex;
+    flex-direction: column; }
+  .galery {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .galery1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  /* TIENDA */
+  #premio {
+    display: flex;
+    margin: 0 auto;
+    width: 120px;
+    height: 160px; }
+  .cepa {
+    display: flex;
+    flex-direction: column; }
+  .img-cepa {
+    height: 50px;
+    width: 50px; }
+  .conteiner-resto {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  .formulario-reserva {
+    display: flex;
+    flex-direction: column;
+    width: 100%; } }
+
+/*BODEGA*/
+.conteiner-bodega {
+  display: flex;
+  flex-direction: column; }
+
+#bod {
+  text-align: center;
+  width: 100%; }
+
+#bod-text {
+  text-align: center;
+  width: 100%;
+  padding: 25px; }
+
+#video-bodega {
+  width: 60%;
+  margin: auto; }
+
+.carousel-h2 {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 25px; }
+
+#carousel-img {
+  margin: auto;
+  width: 50%;
+  height: 500px; }
+
+/*PAGE TIENDA*/
+.body2 {
+  background-image: none;
+  background-image: linear-gradient(down to, rgba(250, 250, 209, 0.918), white); }
+
+.conteiner-vinos {
+  text-align: center;
+  background-color: rgba(222, 222, 209, 0.452);
+  border: 1px solid black;
+  margin-top: 80px; }
+
+.vinos-certificacion {
+  display: flex;
+  width: 100%;
+  padding: 40px; }
+
+#cert {
+  font-size: 30px;
+  margin-top: 80px;
+  text-align: center; }
+
+.caja {
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgba(173, 190, 44, 0.526);
+  box-shadow: 0px 1px 10px black;
+  cursor: default;
+  transition: all 400ms ease; }
+
+.caja .contenido {
+  text-align: center;
+  padding: 10px; }
+
+.caja ul {
+  text-align: left;
+  list-style: decimal; }
+
+.caja figure {
+  width: 200px;
+  width: 200px;
+  margin: auto; }
+
+.vinos-certificacion img {
+  height: 100%;
+  width: 100%; }
+
+.caja:hover {
+  box-shadow: 5px 5px 20px black;
+  transform: translateY(-2%); }
+
+/*categoria de vinos*/
+.conteiner-boxes {
+  margin-top: 50px;
+  padding: 40px; }
+
+.conteiner-boxes h1 {
+  text-align: center;
+  margin-top: 120px; }
+
+.cepa {
+  display: flex;
+  border: 1px solid black;
+  margin-top: 10px; }
+
+.boxes {
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: rgba(173, 190, 44, 0.526);
+  box-shadow: 0px 1px 10px black;
+  transition: all 400ms ease; }
+
+.boxes:hover {
+  box-shadow: 5px 5px 20px black;
+  transform: translateY(-2%); }
+
+.boxes i {
+  float: right;
+  cursor: pointer; }
+
+.boxes i:hover {
+  transition: all 300ms ease;
+  cursor: pointer;
+  color: yellow; }
+
+.conteiner-boxes h1 {
+  font-size: 30px;
+  background-color: rgba(94, 7, 112, 0.204); }
+
+.boxes h2 {
+  color: antiquewhite;
+  background-color: rgba(10, 8, 3, 0.534);
+  text-align: center;
+  font-size: 18px; }
+
+.boxes {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.boxes img {
+  width: 100%; }
+
+/*Pagina restaurante*/
+/*ARMO INTRO Y IFRAME COMERCIAL*/
+.body4 {
+  background-image: none;
+  background-color: #F9E4D4; }
+
+.conteiner-resto {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.conteiner-resto div {
+  background-color: #F9E4D4;
+  text-align: justify;
+  padding: 5%; }
+
+.resto video {
+  display: flex;
+  margin: auto;
+  width: 50%; }
+
+.resto h1 {
+  text-align: center;
+  margin-bottom: 5%; }
+
+.parent {
+  text-align: center; }
+
+.parent h1 {
+  color: #470D21;
+  margin-top: 4%;
+  margin-bottom: 4%; }
+
+.parent .zoom {
+  border: 2px solid black;
+  margin-top: 12%;
+  width: 4rem;
+  height: 4rem;
+  transition: all 2s ease; }
+
+.parent .zoom:hover {
+  transform: scale(7.5); }
+
+/*FORMULARIO DE RESERVA*/
+.formulario-reserva-fieldset {
+  margin: auto;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "label-nombreresto label-nombreresto" "nombreresto nombreresto" "label-emailresto label-emailresto" "emailresto emailresto" "label-telefonoresto label-telefonoresto" "telefonoresto telefonoresto" "label-personasresto label-personasresto" "personasresto personasresto" "label-fecharesto label-fecharesto" "fecharesto fecharesto" "enviar none";
+  gap: 10px; }
+
+#nombreresto, #emailresto, #telefonoresto, #personasresto, #fecharesto {
+  background-color: #470D21;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  padding: 5px;
+  width: 600px; }
+
+conteiner-reservaresto {
+  display: flex;
+  width: 100%;
+  margin-left: 100px; }
+
+.titulo-reserva {
+  display: flex;
+  color: #2c1901;
+  justify-content: center;
+  margin-top: 250px; }
+
+#enviar1 {
+  color: black;
+  margin-top: 3%;
+  grid-area: enviar;
+  background-color: #9C0F48;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 5px; }
+
+/* grid area */
+.label-nombreresto {
+  grid-area: label-nombreresto;
+  color: #2c1901; }
+
+#nombreresto {
+  grid-area: nombreresto; }
+
+.label-emailresto {
+  grid-area: label-emailresto;
+  color: #2c1901; }
+
+#emailresto {
+  grid-area: emailresto;
+  color: #2c1901; }
+
+.label-telefonoresto {
+  grid-area: label-telefonoresto;
+  color: #2c1901; }
+
+#telefonoresto {
+  grid-area: telefonoresto; }
+
+.label-personasresto {
+  grid-area: label-personasresto;
+  color: #2c1901; }
+
+#personas {
+  grid-area: personasresto; }
+
+.label-fecharesto {
+  grid-area: label-fecharesto;
+  color: #2c1901; }
+
+#fecharesto {
+  grid-area: fecharesto; }
+
+/*ACORDEON*/
+/*Acordeon*/
+.button-acordeon {
+  background-color: #470D21;
+  color: white; }
+
+.div-acordeonbody {
+  background-color: beige; }
+
+#acordeon {
+  margin-top: 5%; }
+
+/*Contacto y ubicación*/
+.body6 {
+  background-image: none;
+  background-color: #F9E4D4; }
+
+.titulo-contacto {
+  text-align: center;
+  margin-top: 5%;
+  color: #470D21;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px; }
+
+.formulario-contacto-fieldset {
+  width: 50%;
+  margin: 30px auto;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  grid-template-areas: "label-nombre label-nombre" "nombre nombre" "label-email label-email" "email email" "label-telefono label-telefono" "telefono telefono" "label-mensaje label-mensaje" "mensaje mensaje" "none enviar";
+  gap: 10px; }
+
+#contactenos {
+  justify-content: center;
+  display: flex;
+  margin-top: 80px;
+  color: #470D21; }
+
+#nombre, #email, #telefono, #mensaje {
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  height: 40px; }
+
+.formulario-contacto {
+  margin-top: 0px;
+  background-color: rgba(184, 135, 11, 0); }
+
+#mensaje {
+  grid-area: mensaje;
+  height: 150px; }
+
+label {
+  color: #9C0F48;
+  text-align: left;
+  padding-left: 10px; }
+
+#enviar {
+  color: azure;
+  grid-area: enviar;
+  background-color: #470D21;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 20px; }
+
+.label-nombre {
+  grid-area: label-nombre; }
+
+#nombre {
+  grid-area: nombre; }
+
+.label-email {
+  grid-area: label-email; }
+
+#email {
+  grid-area: email; }
+
+.label-telefono {
+  grid-area: label-telefono; }
+
+#telefono {
+  grid-area: telefono; }
+
+.label-mensaje {
+  grid-area: label-mensaje; }
