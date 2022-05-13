@@ -1,8 +1,8 @@
 # AmariWines
 Meta etiquetas usadas:
-$$""""<meta name="description" content="Restaurante y tienda boutique de vinos en Mendoza, Argentina">""""$$
-$$""""<meta name="keywords" content="Vino Bodega Restaurante Mendoza">""""$$
-$$""""<meta name="robots" content="index"/> (SÓLO EN EL .INDEX)"""""$$
+$$""""meta name="description" content="Restaurante y tienda boutique de vinos en Mendoza, Argentina"""""$$
+$$""""meta name="keywords" content="Vino Bodega Restaurante Mendoza"""""$$
+$$""""meta name="robots" content="index"/> (SÓLO EN EL .INDEX)"""""$$
  
  
  CAMBIOS REALIZADOS AL 12/05/2022:
