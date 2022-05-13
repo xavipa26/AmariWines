@@ -12,6 +12,7 @@ $$""""meta name="robots" content="index"/> (SÓLO EN EL .INDEX)"""""$$
  -Uso de nueva paleta de colores
  
  FALTA (recordatorio para mí):
+ -Anidar media queris
  -Anidado de demás paginas
  -Dar estilos e importar nuevas fuentes
  -Agregar mas contenido
