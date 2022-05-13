@@ -399,7 +399,7 @@
 @media (max-width: 600px) {
   .column {
     flex: 100%;
-    padding: 5px; } }
+    padding: 6px; } }
 
 @media screen and (max-width: 768px) {
   /* acomodo sección nostros */
