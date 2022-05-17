@@ -4,7 +4,7 @@
 @import "../scss/partials/variables";
 @import "../scss/partials/nosotros";
 @import "../scss/partials/tienda";
-
+@import "../scss/partials/bodega";
 
 @import "../scss/partials/mixins";
 
@@ -63,51 +63,6 @@
         align-items: center;
     }
 }
-
-
-
-
-
-
-
-
-
-/*BODEGA*/
-
-.conteiner-bodega{
-    display: flex;
-    flex-direction: column;
-}
-
-#bod{
-    text-align: center;
-    width: 100%;
-}
-
-
-#bod-text{
-    text-align: center;
-    width: 100%;
-    padding: 25px;
-}
-
-#video-bodega{
-    width: 60%;
-    margin: auto;
-}
-
-
-.carousel-h2{
-    text-align: center;
-    margin-top: 5%;
-    font-size: 25px;
-}
-#carousel-img{
-    margin: auto;
-    width: 50%;
-    height: 500px;
-}
-
 
 
 

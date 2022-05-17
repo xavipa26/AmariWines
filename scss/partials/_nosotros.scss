@@ -4,10 +4,7 @@
 
 /*HAGO PAGINA NOSOTROS*/
 
-.bodynosotros{
-    background-image: none;
-    background-color: #F9E4D4;
-}
+
 
 .section-nuestrahistoria{
     width: 100%;
@@ -15,7 +12,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px 250px 250px 250px;
     grid-template-areas:
-    "h2-historia h2-historia h2-historia"
+    "conteiner-h2-historia conteiner-h2-historia conteiner-h2-historia"
     "primerospasos primerospasos img-pasos"
     "img-gente nuestragente nuestragente"
     "produccion produccion img-produccion "
@@ -27,13 +24,24 @@
     align-items: center;
 }
 
+
+.conteiner-h2-historia{
+    display: flex;
+    flex-direction: row;
+    background-image: image(bodega1);
+    width: 100%;
+    height: 16rem;
+}
+
 .h2-historia {
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+    justify-self: center;
     grid-area: h2-historia;
     color: $colorsecundario;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
-    margin-top: 15%;
-    margin-bottom: 10%;
 }
 
 .h2-primerospasos, .h2-nuestragente, .h2-produccion{
@@ -91,6 +99,9 @@
     grid-area: galery1;
 }
 
+.conteiner-h2-historia{
+    grid-area: conteiner-h2-historia;
+}
 
 /* IMAGENES INTRO NOSOTROS */
 .img-gente{
