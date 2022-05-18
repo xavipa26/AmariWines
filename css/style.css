@@ -113,7 +113,6 @@
   height: 16rem; }
 
 .h2-historia {
-  background-color: aqua;
   margin: auto;
   display: flex;
   justify-self: center;
@@ -210,7 +209,8 @@
   width: 100%;
   padding: 10px;
   font-family: Verdana;
-  margin-left: 5%; }
+  margin-left: 5%;
+  margin-top: 5%; }
   .produccion p {
     font-family: verdana;
     text-align: justify;
@@ -227,39 +227,43 @@
 
 .row {
   display: flex;
-  padding: 5px; }
+  padding: 5px;
+  margin-top: 10%; }
+  .row .column {
+    align-items: center;
+    flex: 25%;
+    padding: 5px; }
 
 .galery {
   display: flex;
   flex-direction: column;
   margin-left: 5%;
   text-align: justify; }
+  .galery .h2-row {
+    text-align: center; }
+  .galery #p-row {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify; }
 
 .galery1 {
   display: flex;
   flex-direction: column;
   margin-right: 5%;
   text-align: justify; }
-
-.h2-row {
-  text-align: center; }
-
-#p-row {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: justify; }
+  .galery1 #p-row1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify; }
 
 #p-row1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: justify; }
 
-.column {
-  flex: 25%;
-  padding: 5px; }
-
 /* carousel timeline */
 .h2-linea {
-  margin-top: 10%;
-  color: #470D21; }
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #470D21;
+  text-align: center; }
 
 #carouseltime {
   height: 500px;
@@ -297,10 +301,6 @@
   display: flex;
   flex-direction: column; }
 
-.img-cepa {
-  height: 40px;
-  width: 40px; }
-
 .conteiner-resto {
   width: 100%;
   display: flex;
@@ -324,7 +324,8 @@
     color: #470D21; }
   .conteiner-vinos p {
     width: 80%;
-    color: aliceblue; }
+    color: aliceblue;
+    text-align: center; }
 
 .vinos-certificacion {
   background-image: url("../images/fondo-certif.jpg");
@@ -374,8 +375,11 @@
 
 /*categoria de vinos*/
 .conteiner-boxes {
-  margin-top: 50px;
-  padding: 40px; }
+  margin-top: 1px;
+  border: 1px solid grey;
+  padding: 40px;
+  background-image: url("../images/fondo-viñedo.jpg");
+  background-size: contain; }
   .conteiner-boxes h1 {
     text-align: center;
     margin-top: 120px;
@@ -385,7 +389,7 @@
 .cepa {
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
+  border: 2px solid rgba(94, 7, 112, 0.204);
   margin-top: 10px; }
 
 .boxes {
@@ -394,7 +398,7 @@
   margin: 10px;
   border-radius: 4px;
   overflow: hidden;
-  background-color: rgba(173, 190, 44, 0.526);
+  background-color: #470D21;
   box-shadow: 0px 1px 10px black;
   transition: all 400ms ease;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
@@ -405,16 +409,23 @@
     transform: translateY(-2%); }
   .boxes i {
     float: right;
-    cursor: pointer; }
+    cursor: pointer;
+    color: white; }
   .boxes i:hover {
     transition: all 300ms ease;
     cursor: pointer;
-    color: yellow; }
+    color: #9C0F48; }
   .boxes h2 {
     color: antiquewhite;
     background-color: rgba(10, 8, 3, 0.534);
     text-align: center;
     font-size: 18px; }
+  .boxes p {
+    color: white; }
+  .boxes strong {
+    color: white; }
+  .boxes #img-cepa {
+    height: 400px; }
 
 /*BODEGA*/
 .conteiner-bodega {
@@ -475,68 +486,30 @@
   width: 50%;
   height: 500px; }
 
-/* MEDIA QUERIS */
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    padding: 6px; } }
-
-@media screen and (max-width: 768px) {
-  /* acomodo sección nostros */
-  .section-nuestrahistoria {
-    display: flex;
-    flex-direction: column;
-    width: 100%; }
-  #carouseltime {
-    height: 300px;
-    width: 100%; }
-  .section-nuestrahistoria h2 {
-    width: 100%;
-    display: flex;
-    justify-content: center; }
-  .bodynosotros {
-    width: 100%; }
-  #imgbod:hover {
-    transform: scale(1);
-    transition: all 400ms ease;
-    cursor: pointer; }
-  .vinos-certificacion {
-    display: flex;
-    flex-direction: column; }
-  .galery {
-    display: flex;
-    flex-direction: column;
-    width: 100%; }
-  .galery1 {
-    display: flex;
-    flex-direction: column;
-    width: 100%; }
-  .cepa {
-    flex-direction: column;
-    align-items: center; } }
-
 /*Pagina restaurante*/
 /*ARMO INTRO Y IFRAME COMERCIAL*/
-.body4 {
-  background-image: none;
-  background-color: #F9E4D4; }
-
 .conteiner-resto {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-.conteiner-resto div {
-  background-color: #F9E4D4;
-  text-align: justify;
-  padding: 5%; }
-
-.resto video {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url("../images/fondo-resto.webp");
+  background-size: contain;
+  background-repeat: repeat 2;
   display: flex;
-  margin: auto;
-  width: 50%; }
+  align-items: center;
+  justify-content: center; }
+  .conteiner-resto h1 {
+    padding: 35px; }
+  .conteiner-resto p {
+    width: 70%;
+    padding: 15px;
+    background-color: rgba(222, 217, 222, 0.389);
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-.resto h1 {
-  text-align: center;
-  margin-bottom: 5%; }
+.video-restaurante {
+  background-image: linear-gradient(white, #470D21);
+  margin-top: 60px;
+  display: flex;
+  justify-content: center; }
 
 .parent {
   text-align: center; }
@@ -640,20 +613,17 @@ conteiner-reservaresto {
 .div-acordeonbody {
   background-color: beige; }
 
-#acordeon {
-  margin-top: 5%; }
-
 /*Contacto y ubicación*/
-.body6 {
-  background-image: none;
-  background-color: #F9E4D4; }
+.bodycontacto {
+  background-image: url("../images/fondo-contacto.jpg");
+  background-size: cover; }
 
 .titulo-contacto {
   text-align: center;
   margin-top: 5%;
   color: #470D21;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px; }
+  font-size: 40px; }
 
 .formulario-contacto-fieldset {
   width: 50%;
@@ -663,12 +633,6 @@ conteiner-reservaresto {
   grid-template-columns: 1fr 80px;
   grid-template-areas: "label-nombre label-nombre" "nombre nombre" "label-email label-email" "email email" "label-telefono label-telefono" "telefono telefono" "label-mensaje label-mensaje" "mensaje mensaje" "none enviar";
   gap: 10px; }
-
-#contactenos {
-  justify-content: center;
-  display: flex;
-  margin-top: 80px;
-  color: #470D21; }
 
 #nombre, #email, #telefono, #mensaje {
   background-color: white;
@@ -685,7 +649,7 @@ conteiner-reservaresto {
   height: 150px; }
 
 label {
-  color: #9C0F48;
+  color: #470D21;
   text-align: left;
   padding-left: 10px; }
 
@@ -718,3 +682,43 @@ label {
 
 .label-mensaje {
   grid-area: label-mensaje; }
+
+/* MEDIA QUERIS */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    padding: 6px; } }
+
+@media screen and (max-width: 768px) {
+  /* acomodo sección nostros */
+  .section-nuestrahistoria {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  #carouseltime {
+    height: 300px;
+    width: 100%; }
+  .section-nuestrahistoria h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .bodynosotros {
+    width: 100%; }
+  #imgbod:hover {
+    transform: scale(1);
+    transition: all 400ms ease;
+    cursor: pointer; }
+  .vinos-certificacion {
+    display: flex;
+    flex-direction: column; }
+  .galery {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .galery1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .cepa {
+    flex-direction: column;
+    align-items: center; } }
