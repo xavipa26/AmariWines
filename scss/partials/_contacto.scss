@@ -1,0 +1,83 @@
+@import "variables";
+
+
+/*Contacto y ubicación*/
+
+.bodycontacto{
+    background-image: url("../images/fondo-contacto.jpg");
+    background-size: cover;
+}
+
+.titulo-contacto{
+    text-align: center;
+    margin-top: 5%;
+    color: $colorprimario;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+.formulario-contacto-fieldset{
+    width: 50%;
+    margin: 30px auto;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    grid-template-areas: 
+    "label-nombre label-nombre"
+    "nombre nombre"
+    "label-email label-email"
+    "email email"
+    "label-telefono label-telefono"
+    "telefono telefono"
+    "label-mensaje label-mensaje"
+    "mensaje mensaje"
+    "none enviar";
+    gap: 10px;
+}
+
+
+
+
+
+#nombre, #email, #telefono, #mensaje{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+}
+
+.formulario-contacto{
+    margin-top: 0px;
+    background-color:rgba(184, 135, 11, 0)
+}
+
+
+#mensaje{
+    grid-area: mensaje;
+    height: 150px;
+}
+
+label{
+    color:$colorprimario;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#enviar{
+    color: azure;
+    grid-area: enviar;
+    background-color: #470D21;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.label-nombre{grid-area: label-nombre;}
+#nombre{grid-area: nombre;}
+.label-email{grid-area: label-email;}
+#email{grid-area: email;}
+.label-telefono{grid-area: label-telefono;}
+#telefono{grid-area: telefono;}
+.label-mensaje{ grid-area: label-mensaje;}
+

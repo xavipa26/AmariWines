@@ -1,5 +1,5 @@
 /*TIENDA*/
-
+@import "variables";
 
     /* TIENDA */
     #premio{
@@ -11,11 +11,6 @@
     .cepa{
         display: flex;
         flex-direction: column;
-    }
-
-    .img-cepa{
-        height: 40px;
-        width: 40px;
     }
     .conteiner-resto{
         width: 100%;
@@ -30,32 +25,49 @@
 
     /*PAGE TIENDA*/
 
-.body2{
-    background-image: none;
-    background-image: linear-gradient( down to, rgba(250, 250, 209, 0.918), white);
-}
 
-.conteiner-vinos{
-    text-align: center;
-    background-color: rgba(222, 222, 209, 0.452);
-    border: 1px solid rgb(0, 0, 0);
-    margin-top: 80px;
-}
 
-.vinos-certificacion{
+    .conteiner-vinos{
+        display: flex;
+        flex-direction: column;
+        background-image: url("../images/fondo-vinos.webp");
+        height: 600px;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color: $colorprimario;
+        }
+        p{
+            width: 80%;
+            color: aliceblue;
+            text-align: center;
+        }
+    }
+
+
+    .vinos-certificacion{
+    background-image: url("../images/fondo-certif.jpg");
+    background-size: contain;
     display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 40px;
+    border: 1px solid grey;
     img{
         height: 100%;
         width: 100%;
     }
 }
 
+.conteiner-cajas{
+    display: flex;
+    flex-direction: row;
+}
 
 #cert{
     font-size: 30px;
-    margin-top: 80px;
+    color: beige;
     text-align: center;
 }
 
@@ -66,14 +78,15 @@
     margin: 10px;
     border-radius: 5px;
     overflow: hidden;
-    background-color: rgba(173, 190, 44, 0.526);
-    box-shadow: 0px 1px 10px black;
+    background-color: rgba(0, 0, 0, 0.526);
+    box-shadow: 0px 1px 10px rgb(0, 0, 0);
     cursor: default;
     transition: all 400ms ease;
     
     .contenido{
         text-align: center;
         padding: 10px;
+        color: aliceblue;
     }
 
     ul{
@@ -103,8 +116,11 @@
 /*categoria de vinos*/
 
 .conteiner-boxes{
-    margin-top: 50px;
+    margin-top: 1px;
+    border: 1px solid grey;
     padding: 40px;
+    background-image: url("../images/fondo-viñedo.jpg");
+    background-size: contain;
     h1{
         text-align: center;
         margin-top: 120px;
@@ -118,7 +134,7 @@
 .cepa{
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    border: 2px solid rgba(94, 7, 112, 0.204);
     margin-top: 10px;
 }
 
@@ -129,7 +145,7 @@
     margin: 10px;
     border-radius: 4px;
     overflow: hidden;
-    background-color: rgba(173, 190, 44, 0.526);
+    background-color: $colorprimario;
     box-shadow: 0px 1px 10px black;
     transition: all 400ms ease;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -145,18 +161,28 @@
     i{
         float: right;
         cursor: pointer;
+        color: white;
     }
 
     i:hover{
         transition: all 300ms ease;
         cursor: pointer;
-        color: yellow ;
+        color: $colorsecundario ;
     }
     h2{
         color: antiquewhite;
         background-color: rgba(10, 8, 3, 0.534);
         text-align: center;
         font-size: 18px;
+    }
+    p{
+        color: white;
+    }
+    strong{
+        color: white;
+    }
+    #img-cepa{
+        height: 400px;
     }
 }
 

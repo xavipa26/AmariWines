@@ -4,10 +4,7 @@
 
 /*HAGO PAGINA NOSOTROS*/
 
-.bodynosotros{
-    background-image: none;
-    background-color: #F9E4D4;
-}
+
 
 .section-nuestrahistoria{
     width: 100%;
@@ -15,7 +12,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px 250px 250px 250px;
     grid-template-areas:
-    "h2-historia h2-historia h2-historia"
+    "conteiner-h2-historia conteiner-h2-historia conteiner-h2-historia"
     "primerospasos primerospasos img-pasos"
     "img-gente nuestragente nuestragente"
     "produccion produccion img-produccion "
@@ -27,13 +24,23 @@
     align-items: center;
 }
 
+
+.conteiner-h2-historia{
+    display: flex;
+    flex-direction: row;
+    background-image: image(bodega1);
+    width: 100%;
+    height: 16rem;
+}
+
 .h2-historia {
+    margin: auto;
+    display: flex;
+    justify-self: center;
     grid-area: h2-historia;
     color: $colorsecundario;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
-    margin-top: 15%;
-    margin-bottom: 10%;
 }
 
 .h2-primerospasos, .h2-nuestragente, .h2-produccion{
@@ -91,6 +98,9 @@
     grid-area: galery1;
 }
 
+.conteiner-h2-historia{
+    grid-area: conteiner-h2-historia;
+}
 
 /* IMAGENES INTRO NOSOTROS */
 .img-gente{
@@ -128,6 +138,7 @@
 .produccion{
     @include card-nosotros (#d67d3e2b, 100%, 10px, Verdana, 5%);
     margin-left: 5%;
+    margin-top: 5%;
     p{
         @include card-nosotros-p (verdana, justify, 1rem, 15px)
     }
@@ -149,13 +160,26 @@
 .row{
     display: flex;
     padding: 5px;
+    margin-top: 10%;
+    .column{
+    align-items: center;
+    flex: 25%;
+    padding: 5px;
 }
+    }
 
 .galery{
     display: flex;
     flex-direction: column;
     margin-left: 5%;
     text-align: justify;
+    .h2-row{
+        text-align: center;
+    }
+    #p-row{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+    }
 }
 
 .galery1{
@@ -163,15 +187,14 @@
     flex-direction: column;
     margin-right: 5%;
     text-align: justify;
+    #p-row1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+    }
+    
 }
 
-.h2-row{
-    text-align: center;
-}
-#p-row{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-}
+
 
 #p-row1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -179,15 +202,12 @@
 }
 
 
-.column{
-    flex: 25%;
-    padding: 5px;
-}
-
 /* carousel timeline */
 .h2-linea{
-    margin-top: 10%;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #470D21;
+    text-align: center;
 }
 
 #carouseltime{
