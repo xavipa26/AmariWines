@@ -100,7 +100,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px 250px 250px 250px;
-<<<<<<< HEAD
   grid-template-areas: "h2-historia h2-historia h2-historia"
  "primerospasos primerospasos img-pasos"
  "img-gente nuestragente nuestragente"
@@ -108,9 +107,6 @@
  "galery row galery1"
  "h2-linea h2-linea h2-linea"
  "carouselaños carouselaños carouselaños";
-=======
-  grid-template-areas: "conteiner-h2-historia conteiner-h2-historia conteiner-h2-historia" "primerospasos primerospasos img-pasos" "img-gente nuestragente nuestragente" "produccion produccion img-produccion " "galery row galery1" "h2-linea h2-linea h2-linea" "carouselaños carouselaños carouselaños";
->>>>>>> xavi
   gap: 50px;
   justify-items: center;
   align-items: center; }
