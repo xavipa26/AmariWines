@@ -929,18 +929,8 @@ label {
     height: 2rem;
     border: none; }
   /* acomodo sección nostros */
-  .section-nuestrahistoria {
-    display: flex;
-    flex-direction: column;
-    width: 100%; }
   #carouseltime {
     height: 300px;
-    width: 100%; }
-  .section-nuestrahistoria h2 {
-    width: 100%;
-    display: flex;
-    justify-content: center; }
-  .bodynosotros {
     width: 100%; }
   #imgbod:hover {
     transform: scale(1);
@@ -1011,7 +1001,16 @@ label {
     background: linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-resto.webp");
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
-    background-attachment: fixed; } }
+    background-attachment: fixed; }
+  .section-nuestrahistoria {
+    margin-top: 10%; }
+  .primerospasos, .nuestragente, .produccion {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background-color: #F9E4D4; }
+    .primerospasos .img-cardsintro, .nuestragente .img-cardsintro, .produccion .img-cardsintro {
+      margin: auto; } }
 
 @media only screen and (max-width: 600px) {
   .btn-flotante {

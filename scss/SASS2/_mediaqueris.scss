@@ -12,24 +12,11 @@
         border: none;
     }
     /* acomodo sección nostros */
-    .section-nuestrahistoria{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
     #carouseltime{
         height: 300px;
         width: 100%;
     }
 
-    .section-nuestrahistoria h2{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .bodynosotros{
-        width: 100%;
-    }
     #imgbod:hover{
         transform: scale(1);
         transition: all 400ms ease;
@@ -115,8 +102,21 @@
                 background-size: cover;
                 background-attachment: fixed;
                 }
-                
+    
+    .section-nuestrahistoria{
+        margin-top: 10%;
     }
+    .primerospasos, .nuestragente, .produccion{
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        background-color: $colorterciario;
+        .img-cardsintro{
+            margin: auto;
+        }
+    }
+    }
+
 
     @media only screen and (max-width: 600px) {
         .btn-flotante {
