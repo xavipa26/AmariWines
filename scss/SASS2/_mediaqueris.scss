@@ -25,6 +25,30 @@
     .vinos-certificacion{
         display: flex;
         flex-direction: column;
+        .conteiner-cajas{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .section-nuestrahistoria{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "h2-historia h2-historia h2-historia"
+        "h2-primerospasos h2-primerospasos h2-primerospasos"
+        "primerospasos primerospasos primerospasos"
+        "h2-nuestragente h2-nuestragente h2-nuestragente"
+        "nuestragente nuestragente nuestragente"
+        "h2-produccion h2-produccion h2-produccion"
+        "produccion produccion produccion "
+        "galery galery galery"
+        "galery1 galery1 galery1"
+        "row row row"
+        "h2-linea h2-linea h2-linea"
+        "carouselaños carouselaños carouselaños";
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
     }
     .galery{
         display: flex;
@@ -32,9 +56,17 @@
         width: 100%;
     }
     .galery1{
+        margin-left: 5%;
         display: flex;
         flex-direction: column;
         width: 100%;
+        .h2-row{
+            text-align: center;
+        }
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
     }
     .cepa{
         flex-direction: column;
