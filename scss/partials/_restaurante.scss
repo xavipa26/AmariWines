@@ -1,28 +1,10 @@
-@import "variables";
+@import "../SASS2/variables";
 
 /*Pagina restaurante*/
 
 /*ARMO INTRO Y IFRAME COMERCIAL*/
 
-.conteiner-resto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url("../images/fondo-resto.webp");
-    background-size: contain;
-    background-repeat:repeat 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h1{
-        padding: 35px;
-    }
-    p{
-        width: 70%;
-        padding: 15px;
-        background-color: rgba(222, 217, 222, 0.389);
-        text-align: justify;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-}
+
 
 .video-restaurante{
     background-image: linear-gradient( white, $colorprimario);
@@ -32,23 +14,25 @@
 }
 .parent{
     text-align: center;
-}
-.parent h1{
-    color: #470D21;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    h1{
+        color: #470D21;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        font-family: 'raleway'
+    }
+    .zoom{
+        border:  2px solid black;
+        margin-top: 12%;
+        width: 4rem;
+        height: 4rem;
+        transition: all 2s ease;
+        &:hover{
+            transform: scale(7.5);
+        }
+    }
 }
 
-.parent .zoom{
-    border:  2px solid black;
-    margin-top: 12%;
-    width: 4rem;
-    height: 4rem;
-    transition: all 2s ease;
-}
-.parent .zoom:hover{
-    transform: scale(7.5);
-}
+
 
 /*FORMULARIO DE RESERVA*/
 
@@ -75,7 +59,8 @@
 
 
 #nombreresto, #emailresto, #telefonoresto, #personasresto, #fecharesto{
-    background-color: #470D21;
+    color: white;
+    background-color:$colorprimario;
     border-radius: 5px;
     border: none;
     height: 40px;
@@ -95,20 +80,27 @@ conteiner-reservaresto{
     color:rgb(44, 25, 1);
     justify-content: center;
     margin-top: 250px;
+    font-family: 'raleway';
 }
 
 
 #enviar1{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-top: 3%;
     grid-area: enviar;
-    background-color: #9C0F48;
+    background-color: $colorprimario;
     width: 80px;
     height: 40px;
     border: none;
     border-radius: 5px;
 }
 
+
+.formulario-reserva {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 /* grid area */
 .label-nombreresto{
     grid-area: label-nombreresto;

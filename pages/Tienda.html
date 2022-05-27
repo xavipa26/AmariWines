@@ -13,15 +13,20 @@
     <script src="https://kit.fontawesome.com/908e4b0575.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
 </head>
 
-<body class="body2">
 
-    <header>
+
+<body class="bodybodega">
+    <header class="header-page3">
         <nav class="navbar navbar-expand-lg  menu-index">
             <div class="container-fluid conteiner-index">
                 <a class="navbar-brand" id="nav-inicio" href="../index.html">
-                    <img src="../images/Grand.png" alt="Logo-AmariWines width="50" height="42"
+                    <img src="../images/Grand.png" alt="Logo-AmariWines width=" 50" height="42"
                         class="d-inline-block align-text-center ">
                     Inicio
                 </a>
@@ -33,17 +38,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/Nosotros.html">Nosotros</a>
+                            <a class="nav-link active nav-a" aria-current="page"
+                                href="../pages/Nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="../pages/Bodega.html">Bodega</a>
+                            <a class="nav-link active nav-a" href="../pages/Bodega.html">Bodega</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle active nav-a" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Tienda
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu dropdown-nav aria-labelledby=" navbarDropdown">
                                 <li><a class="dropdown-item" id="index-dropdown"
                                         href="../pages/Tienda.html">Certificaciones</a></li>
                                 <li><a class="dropdown-item" id="index-dropdown"
@@ -57,11 +63,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle active nav-a" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Restaurante
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu dropdown-nav" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" id="index-dropdown"
                                         href="../pages/Restaurante.html#conocenos">Conocenos</a></li>
                                 <li><a class="dropdown-item" id="index-dropdown"
@@ -71,9 +77,15 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="../pages/Contacto.html">Contacto</a>
+                            <a class="nav-link active nav-a" href="../pages/Contacto.html">Contacto</a>
                         </li>
                     </ul>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="¿Qúe desea buscar?"
                             aria-label="Search">
@@ -82,12 +94,19 @@
                 </div>
             </div>
         </nav>
+        <section class="texto-header3">
+            <h1 class="titulo-nav3"> Nuestros vinos</h1>
+            <p>A través de nuestras botellas de de vino de distintas cepas tales como Malbec, Cabernet Sauvignon, Pinot Noir y Chardonnay, bajo la etiqueta de Amari Wines queremos reflejar toda la exquisita y fertil tierra del oasis de Valle de Uco.</p>
+
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: white;"></path>
+            </svg></div>
     </header>
 
-        <div class="conteiner-vinos">
-            <h1>Nuestros vinos</h1>
-            <p>A través de nuestras botellas de de vino de distintas cepas tales como Malbec, Cabernet Sauvignon, Pinot Noir y Chardonnay, bajo la etiqueta de Amari Wines queremos reflejar toda la exquisita y fertil tierra del oasis de Valle de Uco.</p>
-        </div>
+
 
         
         <div class="vinos-certificacion">
@@ -145,15 +164,18 @@
                 <div class="boxes"data-aos="flip-up">
                 <h2>Lordicus Malbec</h2>
                 <img id="img-cepa" src="../images/1.png" alt="vino_malbec">
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Cosecha 2019-Reserva</p>
+                <h5>750ml.</h5>
                 <strong>$1400</strong>
+                
                 <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
                 </div>
 
                 <div class="boxes"data-aos="flip-up">
                 <h2>Madison Malbec</h2>
                 <img id="img-cepa" src="../images/1.png"" alt="vino_malbec">
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Cosecha 2020-Reserva Gold</p>
+                <h5>750ml.</h5>
                 <strong>$1200</strong>
                 <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
                 </div>
@@ -161,7 +183,8 @@
                 <div class="boxes"data-aos="flip-up">
                 <h2>Santa Malbec</h2>
                 <img id="img-cepa" src="../images/1.png"" alt="vino_malbec">
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Cosecha 2019-Barrica Roble</p>
+                <h5>750ml.</h5>
                 <strong>$1100</strong>
                 <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
                 </div>
@@ -169,7 +192,8 @@
                 <div class="boxes"data-aos="flip-up">
                 <h2>Corlins Malbec</h2>
                 <img id="img-cepa" src="../images/1.png"" alt="vino_malbec">
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Cosecha 2021</p>
+                <h5>750ml.</h5>
                 <strong>$1300</strong>
                 <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
                 </div>
@@ -180,7 +204,8 @@
             <div class="boxes"data-aos="flip-up">
             <h2>Gloris</h2>
             <img id="img-cepa" src="../images/1.png" alt="vino_cabernet">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cosecha 2017-Reserva</p>
+            <h5>750ml.</h5>
             <strong>$1400</strong>
             <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -188,7 +213,8 @@
             <div class="boxes"data-aos="flip-up">
             <h2>Fonutana</h2>
             <img id="img-cepa" src="../images/1.png"" alt="vino_cabernet">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cosecha 2018-Roble francés</p>
+            <h5>750ml.</h5>
             <strong>$1200</strong>
             <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -196,7 +222,8 @@
             <div class="boxes"data-aos="flip-up">
             <h2>Massey</h2>
             <img id="img-cepa" src="../images/1.png"" alt="vino_cabernet">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cosecha 2016-Exportación</p>
+            <h5>750ml.</h5>
             <strong>$1100</strong>
             <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -204,7 +231,8 @@
             <div class="boxes"data-aos="flip-up">
             <h2>Perkins</h2>
             <img id="img-cepa" src="../images/1.png"" alt="vino_cabernet">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cosecha 2019-Exportación</p>
+            <h5>750ml.</h5>
             <strong>$1300</strong>
             <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -215,7 +243,8 @@
             <div class="boxes"data-aos="flip-up">
             <h2>Valtra</h2>
             <img id="img-cepa" src="../images/1.png" alt="vino_pinot">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cosecha 2022-Reserva</p>
+            <h5>750ml.</h5>
             <strong>$1400</strong>
             <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -223,7 +252,8 @@
             <div class="boxes"data-aos="flip-up">
             <h2>Mintini</h2>
             <img id="img-cepa" src="../images/1.png"" alt="vino_pinot">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cosecha 2019-Reserva</p>
+            <h5>750ml.</h5>
             <strong>$1200</strong>
             <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -231,7 +261,8 @@
             <div class="boxes"data-aos="flip-up">
             <h2>Florida</h2>
             <img id="img-cepa" src="../images/1.png"" alt="vino_pinot">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cosecha 2020-Premium</p>
+            <h5>750ml.</h5>
             <strong>$1100</strong>
             <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -239,7 +270,8 @@
             <div class="boxes"data-aos="flip-up">
             <h2>Summit</h2>
             <img id="img-cepa" src="../images/1.png"" alt="vino_pinot">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cosecha 2019-Barrica pino</p>
+            <h5>750ml.</h5>
             <strong>$1300</strong>
             <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -250,7 +282,8 @@
             <div class="boxes"data-aos="flip-up">
             <h2>Durling</h2>
             <img id="img-cepa" src="../images/1.png" alt="vino_chardonnay">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cosecha 2022-Reserva</p>
+            <h5>750ml.</h5>
             <strong>$1400</strong>
             <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -258,7 +291,8 @@
             <div class="boxes"data-aos="flip-up">
             <h2>Martini</h2>
             <img id="img-cepa" src="../images/1.png"" alt="vino_chardonnay">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cosecha 2022-Reserva Gold</p>
+            <h5>750ml.</h5>
             <strong>$1200</strong>
             <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -266,7 +300,8 @@
             <div class="boxes"data-aos="flip-up">
             <h2>Texas</h2>
             <img id="img-cepa" src="../images/1.png"" alt="vino_chardonnay">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cosecha 2022-Reserva</p>
+            <h5>750ml.</h5>
             <strong>$1100</strong>
             <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -274,7 +309,8 @@
             <div class="boxes"data-aos="flip-up">
             <h2>Okklahoma</h2>
             <img id="img-cepa" src="../images/1.png"" alt="vino_chardonnay">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cosecha 2022-Reserva</p>
+            <h5>750ml.</h5>
             <strong>$1300</strong>
             <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -282,29 +318,10 @@
     </div>
     </section>
 
+    <a href="#" class="btn-flotante"><img src="../images/boton-up.svg" alt=""></a>
 
 
-    <footer class="page-footer font-small teal pt-4 fixed-bottom footdown1">
-        <div class="container-fluid text-center text-md-left text-index">
-            <div class="row">
-                <div class="col-md-6 mt-md-0 mt-3">
-                    <h5 class="text-uppercase font-weight-bold">Sobre nosotros</h5>
-                    <p>Somos Amari Wines una bodega-resto boutique ubicada en Valle de uco Km.55 Mendoza, Argentina.</p>
-
-                </div>
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-6 mb-md-0 mb-3">
-                    <h5 class="text-uppercase font-weight-bold">Nuestras redes</h5>
-                    <div class="red-social">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-youtube"></a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+    <footer>
         <div class="footer-copyright text-center py-3 footer-down">© 2022 Copyright:
             <a href="#"> Amari Wines</a>
         </div>

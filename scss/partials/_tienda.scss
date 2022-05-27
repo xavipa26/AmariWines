@@ -1,106 +1,94 @@
 /*TIENDA*/
-@import "variables";
+@import "../SASS2/variables";
 
-    /* TIENDA */
-    #premio{
-        display: flex;
-        margin:0 auto;
-        width: 120px;
-        height: 160px;
+
+
+/* TIENDA */
+#premio {
+    display: flex;
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+}
+
+#cert {
+    font-size: 50px;
+    font-family: 'raleway';
+    color: $colorprimario;
+    text-align: center;
+}
+
+.cepa {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.texto-header3 {
+    p {
+        width: 50%;
+        text-align: justify;
+        margin: auto;
     }
-    .cepa{
-        display: flex;
-        flex-direction: column;
-    }
-    .conteiner-resto{
-        width: 100%;
-        display: flex;
-        flex-direction:column;
-    }
-    .formulario-reserva{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    /*PAGE TIENDA*/
+}
 
 
 
-    .conteiner-vinos{
-        display: flex;
-        flex-direction: column;
-        background-image: url("../images/fondo-vinos.webp");
-        height: 600px;
-        background-size: cover;
-        align-items: center;
-        justify-content: center;
-        h1{
-            color: $colorprimario;
-        }
-        p{
-            width: 80%;
-            color: aliceblue;
-            text-align: center;
-        }
-    }
-
-
-    .vinos-certificacion{
-    background-image: url("../images/fondo-certif.jpg");
-    background-size: contain;
+.vinos-certificacion {
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 40px;
-    border: 1px solid grey;
-    img{
+
+    img {
         height: 100%;
         width: 100%;
     }
 }
 
-.conteiner-cajas{
+.conteiner-cajas {
     display: flex;
     flex-direction: row;
 }
 
-#cert{
-    font-size: 30px;
-    color: beige;
-    text-align: center;
-}
 
 
-.caja{
+
+.caja {
     padding: 10px;
     width: 100%;
     margin: 10px;
     border-radius: 5px;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.526);
+
+
+
+
     box-shadow: 0px 1px 10px rgb(0, 0, 0);
     cursor: default;
     transition: all 400ms ease;
-    
-    .contenido{
+
+    .contenido {
         text-align: center;
         padding: 10px;
-        color: aliceblue;
+        color: rgb(0, 0, 0);
     }
 
-    ul{
+    ul {
         text-align: left;
         list-style: decimal;
+        color: black;
     }
 
-    figure{
+    figure {
         width: 200px;
         width: 200px;
         margin: auto;
     }
 
-    &:hover{
+    &:hover {
         box-shadow: 5px 5px 20px rgb(0, 0, 0);
         transform: translateY(-2%);
     }
@@ -115,13 +103,13 @@
 
 /*categoria de vinos*/
 
-.conteiner-boxes{
+
+.conteiner-boxes {
     margin-top: 1px;
-    border: 1px solid grey;
     padding: 40px;
-    background-image: url("../images/fondo-viñedo.jpg");
-    background-size: contain;
-    h1{
+
+    h1 {
+        font-family: 'raleway';
         text-align: center;
         margin-top: 120px;
         font-size: 30px;
@@ -131,15 +119,14 @@
 
 
 
-.cepa{
+.cepa {
     display: flex;
     flex-direction: row;
     border: 2px solid rgba(94, 7, 112, 0.204);
-    margin-top: 10px;
 }
 
 
-.boxes{
+.boxes {
     padding: 10px;
     width: 100%;
     margin: 10px;
@@ -150,46 +137,85 @@
     transition: all 400ms ease;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-    img{
+    img {
         width: 100%;
     }
-    &:hover{
+
+    &:hover {
         box-shadow: 5px 5px 20px rgb(0, 0, 0);
         transform: translateY(-2%);
     }
 
-    i{
+    i {
         float: right;
         cursor: pointer;
         color: white;
     }
 
-    i:hover{
+    i:hover {
         transition: all 300ms ease;
         cursor: pointer;
         color: $colorsecundario ;
     }
-    h2{
+
+    h2 {
         color: antiquewhite;
         background-color: rgba(10, 8, 3, 0.534);
+        font-family: $ff;
         text-align: center;
-        font-size: 18px;
+        font-size: 20px;
     }
-    p{
+
+    p {
         color: white;
+        text-align: center;
+        font-family: 'raleway';
     }
-    strong{
+
+    strong {
         color: white;
+        font-family: 'raleway';
+        font-size: 20px;
     }
-    #img-cepa{
+
+    h5 {
+        color: black;
+        font-size: 15px;
+        text-align: right;
+    }
+
+    #img-cepa {
         height: 400px;
     }
 }
 
 
+.btn-flotante {
+    border-radius: 5px;
+    background-color: $colorprimario;
+    padding: 5px 9px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    img{
+        height: 30px;
+    }
+}
 
+.btn-flotante:hover {
+    background-color: $colorsecundario;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}
 
-
-
-
-
+@media only screen and (max-width: 600px) {
+    .btn-flotante {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+}

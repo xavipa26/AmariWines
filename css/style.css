@@ -1,12 +1,51 @@
 @charset "UTF-8";
 /* NAV PARA TODAS LAS PAGINAS */
+.header-page {
+  height: 600px;
+  width: 100%;
+  background: #3a6186;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(136, 37, 62, 0.5), rgba(58, 98, 136, 0.5)), url("../images/fondo-nav.jpg");
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(136, 37, 62, 0.5), rgba(58, 98, 136, 0.5)), url("../images/fondo-nav.jpg");
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed; }
+  .header-page img:hover {
+    border-radius: 2px;
+    transform: scale(3.7);
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: all 600ms ease; }
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.titulo-nav {
+  text-align: center;
+  margin-top: 20%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px; }
+
 .menu-index {
-  background-color: #470D21;
   display: flex;
-  font-size: 1.2rem; }
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.185); }
 
 .conteiner-index a {
-  color: white; }
+  color: black; }
+
+.nav-a {
+  margin-left: 17.5px;
+  margin-right: 17.5px; }
+
+.dropdown-nav {
+  background: none;
+  background-color: rgba(255, 255, 255, 0.185);
+  width: 25px;
+  margin-right: 15px; }
 
 #nav-inicio {
   font-size: 1.4rem; }
@@ -37,21 +76,150 @@
 #navicon {
   height: 2.5rem; }
 
+/*NAV NOSOTROS*/
+.header-page1 {
+  height: 600px;
+  width: 100%;
+  background: #3a6186;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-cards.jpg");
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-cards.jpg");
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed; }
+  .header-page1 img:hover {
+    border-radius: 2px;
+    transform: scale(3.7);
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: all 600ms ease; }
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.titulo-nav1 {
+  text-align: center;
+  margin-top: 20%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px; }
+
+/*NAV BODEGA*/
+.header-page2 {
+  height: 600px;
+  width: 100%;
+  background: #3a6186;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-bod.jpg");
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-bod.jpg");
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed; }
+  .header-page2 img:hover {
+    border-radius: 2px;
+    transform: scale(3.7);
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: all 600ms ease; }
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.titulo-nav2 {
+  text-align: center;
+  margin-top: 20%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px; }
+
+/*Nav tienda*/
+.header-page3 {
+  height: 600px;
+  width: 100%;
+  background: #3a6186;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-vinos.webp");
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-vinos.webp");
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed; }
+  .header-page3 img:hover {
+    border-radius: 2px;
+    transform: scale(3.7);
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: all 600ms ease; }
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.titulo-nav3 {
+  text-align: center;
+  margin-top: 20%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px; }
+
+/*NAV RESTO*/
+.header-page4 {
+  height: 600px;
+  width: 100%;
+  background: #3a6186;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-vinos.webp");
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-resto.webp");
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed; }
+  .header-page4 img:hover {
+    border-radius: 2px;
+    transform: scale(3.7);
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: all 600ms ease; }
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.texto-header4 .titulo-nav4 {
+  text-align: center;
+  margin-top: 5%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px; }
+
+.texto-header4 p {
+  width: 70%;
+  text-align: justify;
+  margin: auto;
+  margin-top: 2%; }
+
+.texto-header4 .p-restoult {
+  margin-top: 1%; }
+
+/*NAV CONTACTO*/
+.header-page5 {
+  width: 100%; }
+  .header-page5 img:hover {
+    border-radius: 2px;
+    transform: scale(3.7);
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: all 600ms ease; }
+
 /*footer para todas las paginas*/
-.footdown1 {
-  position: relative;
-  background-color: #9C0F48;
-  margin-top: 5%; }
-
-.text-index {
-  color: aliceblue; }
-
-.imgindex {
-  height: 50%; }
-
 .footer-down {
   background-color: #470D21;
-  color: aliceblue; }
+  color: aliceblue;
+  margin-top: 5%; }
 
 .footer-down a {
   background-color: #470D21;
@@ -65,9 +233,44 @@
   color: #470D21;
   width: 2rem; }
 
+/*index*/
+.ilustracion-index {
+  margin-top: 80px;
+  width: 100%; }
+  .ilustracion-index .h2-index {
+    color: #470D21;
+    font-family: 'raleway', sans-serif;
+    font-size: 40px;
+    text-align: center; }
+
+.figure {
+  display: flex;
+  justify-content: space-evenly; }
+  .figure img {
+    height: 500px; }
+
+.contenido-texto {
+  margin-top: 40px; }
+  .contenido-texto p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .contenido-texto h3 {
+    font-family: 'raleway'; }
+    .contenido-texto h3 span {
+      background-color: #470D21;
+      color: white;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      margin-bottom: 5px;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.8); }
+
 /* CARDS INDEX */
 .cards-index {
-  background-color: #F9E4D4;
+  background: -webkit-linear-gradient(to right, rgba(136, 37, 62, 0.3), rgba(58, 98, 136, 0.3)), url("../images/fondo-cards-index.webp");
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(136, 37, 62, 0.3), rgba(58, 98, 136, 0.3)), url("../images/fondo-cards-index.webp");
   padding: 1%;
   margin: 0.5%;
   margin-top: 3%;
@@ -96,43 +299,30 @@
 
 /*HAGO PAGINA NOSOTROS*/
 .section-nuestrahistoria {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px 250px 250px 250px;
-  grid-template-areas: "h2-historia h2-historia h2-historia"
- "primerospasos primerospasos img-pasos"
- "img-gente nuestragente nuestragente"
- "produccion produccion img-produccion "
- "galery row galery1"
- "h2-linea h2-linea h2-linea"
- "carouselaños carouselaños carouselaños";
-  gap: 50px;
+  grid-template-areas: "h2-historia h2-historia h2-historia" "h2-primerospasos h2-primerospasos h2-primerospasos" "primerospasos primerospasos primerospasos" "h2-nuestragente h2-nuestragente h2-nuestragente" "nuestragente nuestragente nuestragente" "h2-produccion h2-produccion h2-produccion" "produccion produccion produccion " "galery row galery1" "h2-linea h2-linea h2-linea" "carouselaños carouselaños carouselaños";
+  gap: 20px;
   justify-items: center;
   align-items: center; }
 
-.conteiner-h2-historia {
-  display: flex;
-  flex-direction: row;
-  background-image: image(bodega1);
-  width: 100%;
-  height: 16rem; }
-
 .h2-historia {
-  margin: auto;
-  display: flex;
-  justify-self: center;
+  background-image: url("../images/fondo-cards1.jpg");
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 40px;
   grid-area: h2-historia;
   color: #9C0F48;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 35px; }
 
 .h2-primerospasos, .h2-nuestragente, .h2-produccion {
-  display: flex;
   color: #470D21;
   padding: 1%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-family: 'raleway';
+  font-size: 30px;
   justify-content: center; }
 
 /* ARREGLO GRID AREA */
@@ -145,20 +335,17 @@
 .carouselaños {
   grid-area: carouselaños; }
 
-.img-pasos {
-  grid-area: img-pasos; }
+.h2-produccion {
+  grid-area: h2-produccion; }
+
+.h2-nuestragente {
+  grid-area: h2-nuestragente; }
 
 .nuestragente {
   grid-area: nuestragente; }
 
-.img-gente {
-  grid-area: img-gente; }
-
 .produccion {
   grid-area: produccion; }
-
-.img-produccion {
-  grid-area: img-produccion; }
 
 .row {
   grid-area: row; }
@@ -171,6 +358,9 @@
 
 .conteiner-h2-historia {
   grid-area: conteiner-h2-historia; }
+
+.h2-primerospasos {
+  grid-area: h2-primerospasos; }
 
 /* IMAGENES INTRO NOSOTROS */
 .img-gente {
@@ -187,11 +377,15 @@
 
 /* DIVS CARDS INTRO */
 .primerospasos {
+  background-image: url("../images/fondo-cards1.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: #d67d3e2b;
   width: 100%;
   padding: 10px;
   font-family: Verdana;
-  margin-left: 5%; }
+  width: 100%; }
   .primerospasos p {
     font-family: verdana;
     text-align: justify;
@@ -199,11 +393,15 @@
     padding: 15px; }
 
 .nuestragente {
+  background-image: url("../images/fondo-cards1.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: #d67d3e2b;
   width: 100%;
   padding: 10px;
   font-family: Verdana;
-  margin-right: 5%; }
+  width: 100%; }
   .nuestragente p {
     font-family: verdana;
     text-align: justify;
@@ -211,12 +409,15 @@
     padding: 15px; }
 
 .produccion {
+  background-image: url("../images/fondo-cards1.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: #d67d3e2b;
   width: 100%;
   padding: 10px;
   font-family: Verdana;
-  margin-left: 5%;
-  margin-top: 5%; }
+  width: 100%; }
   .produccion p {
     font-family: verdana;
     text-align: justify;
@@ -227,7 +428,8 @@
   width: 100%; }
 
 #imgbod:hover {
-  transform: scale(2.5);
+  filter: grayscale(80%);
+  transform: scale(1.2);
   transition: all 400ms ease;
   cursor: pointer; }
 
@@ -242,21 +444,27 @@
 
 .galery {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  margin-left: 5%;
   text-align: justify; }
   .galery .h2-row {
-    text-align: center; }
-  .galery #p-row {
+    text-align: center;
+    font-family: 'raleway'; }
+  .galery .p-row {
+    padding: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify; }
 
 .galery1 {
   display: flex;
+  width: 100%;
   flex-direction: column;
   margin-right: 5%;
   text-align: justify; }
-  .galery1 #p-row1 {
+  .galery1 .h2-row {
+    font-family: 'raleway'; }
+  .galery1 .p-row1 {
+    padding: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify; }
 
@@ -300,47 +508,30 @@
 #premio {
   display: flex;
   margin: 0 auto;
-  width: 120px;
+  width: 160px;
   height: 160px; }
+
+#cert {
+  font-size: 50px;
+  font-family: 'raleway';
+  color: #470D21;
+  text-align: center; }
 
 .cepa {
   display: flex;
   flex-direction: column; }
 
-.conteiner-resto {
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
-
-.formulario-reserva {
-  display: flex;
-  flex-direction: column;
-  width: 100%; }
-
-/*PAGE TIENDA*/
-.conteiner-vinos {
-  display: flex;
-  flex-direction: column;
-  background-image: url("../images/fondo-vinos.webp");
-  height: 600px;
-  background-size: cover;
-  align-items: center;
-  justify-content: center; }
-  .conteiner-vinos h1 {
-    color: #470D21; }
-  .conteiner-vinos p {
-    width: 80%;
-    color: aliceblue;
-    text-align: center; }
+.texto-header3 p {
+  width: 50%;
+  text-align: justify;
+  margin: auto; }
 
 .vinos-certificacion {
-  background-image: url("../images/fondo-certif.jpg");
-  background-size: contain;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 40px;
-  border: 1px solid grey; }
+  padding: 40px; }
   .vinos-certificacion img {
     height: 100%;
     width: 100%; }
@@ -349,28 +540,23 @@
   display: flex;
   flex-direction: row; }
 
-#cert {
-  font-size: 30px;
-  color: beige;
-  text-align: center; }
-
 .caja {
   padding: 10px;
   width: 100%;
   margin: 10px;
   border-radius: 5px;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.526);
   box-shadow: 0px 1px 10px black;
   cursor: default;
   transition: all 400ms ease; }
   .caja .contenido {
     text-align: center;
     padding: 10px;
-    color: aliceblue; }
+    color: black; }
   .caja ul {
     text-align: left;
-    list-style: decimal; }
+    list-style: decimal;
+    color: black; }
   .caja figure {
     width: 200px;
     width: 200px;
@@ -382,11 +568,9 @@
 /*categoria de vinos*/
 .conteiner-boxes {
   margin-top: 1px;
-  border: 1px solid grey;
-  padding: 40px;
-  background-image: url("../images/fondo-viñedo.jpg");
-  background-size: contain; }
+  padding: 40px; }
   .conteiner-boxes h1 {
+    font-family: 'raleway';
     text-align: center;
     margin-top: 120px;
     font-size: 30px;
@@ -395,8 +579,7 @@
 .cepa {
   display: flex;
   flex-direction: row;
-  border: 2px solid rgba(94, 7, 112, 0.204);
-  margin-top: 10px; }
+  border: 2px solid rgba(94, 7, 112, 0.204); }
 
 .boxes {
   padding: 10px;
@@ -424,23 +607,54 @@
   .boxes h2 {
     color: antiquewhite;
     background-color: rgba(10, 8, 3, 0.534);
+    font-family: "raleway";
     text-align: center;
-    font-size: 18px; }
+    font-size: 20px; }
   .boxes p {
-    color: white; }
+    color: white;
+    text-align: center;
+    font-family: 'raleway'; }
   .boxes strong {
-    color: white; }
+    color: white;
+    font-family: 'raleway';
+    font-size: 20px; }
+  .boxes h5 {
+    color: black;
+    font-size: 15px;
+    text-align: right; }
   .boxes #img-cepa {
     height: 400px; }
+
+.btn-flotante {
+  border-radius: 5px;
+  background-color: #470D21;
+  padding: 5px 9px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  z-index: 99; }
+  .btn-flotante img {
+    height: 30px; }
+
+.btn-flotante:hover {
+  background-color: #9C0F48;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-7px); }
+
+@media only screen and (max-width: 600px) {
+  .btn-flotante {
+    font-size: 14px;
+    padding: 12px 20px;
+    bottom: 20px;
+    right: 20px; } }
 
 /*BODEGA*/
 .conteiner-bodega {
   display: flex;
-  flex-direction: column; }
-  .conteiner-bodega #bod {
-    text-align: center;
-    width: 100%;
-    margin-top: 1rem; }
+  flex-direction: column;
+  margin-top: 5%; }
   .conteiner-bodega .elemento-divider {
     display: flex;
     background-color: black;
@@ -494,23 +708,6 @@
 
 /*Pagina restaurante*/
 /*ARMO INTRO Y IFRAME COMERCIAL*/
-.conteiner-resto {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url("../images/fondo-resto.webp");
-  background-size: contain;
-  background-repeat: repeat 2;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .conteiner-resto h1 {
-    padding: 35px; }
-  .conteiner-resto p {
-    width: 70%;
-    padding: 15px;
-    background-color: rgba(222, 217, 222, 0.389);
-    text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
 .video-restaurante {
   background-image: linear-gradient(white, #470D21);
   margin-top: 60px;
@@ -519,21 +716,19 @@
 
 .parent {
   text-align: center; }
-
-.parent h1 {
-  color: #470D21;
-  margin-top: 4%;
-  margin-bottom: 4%; }
-
-.parent .zoom {
-  border: 2px solid black;
-  margin-top: 12%;
-  width: 4rem;
-  height: 4rem;
-  transition: all 2s ease; }
-
-.parent .zoom:hover {
-  transform: scale(7.5); }
+  .parent h1 {
+    color: #470D21;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-family: 'raleway'; }
+  .parent .zoom {
+    border: 2px solid black;
+    margin-top: 12%;
+    width: 4rem;
+    height: 4rem;
+    transition: all 2s ease; }
+    .parent .zoom:hover {
+      transform: scale(7.5); }
 
 /*FORMULARIO DE RESERVA*/
 .formulario-reserva-fieldset {
@@ -541,20 +736,11 @@
   border: none;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "label-nombreresto label-nombreresto"
- "nombreresto nombreresto"
- "label-emailresto label-emailresto"
- "emailresto emailresto"
- "label-telefonoresto label-telefonoresto"
- "telefonoresto telefonoresto"
- "label-personasresto label-personasresto"
- "personasresto personasresto"
- "label-fecharesto label-fecharesto"
- "fecharesto fecharesto"
- "enviar none";
+  grid-template-areas: "label-nombreresto label-nombreresto" "nombreresto nombreresto" "label-emailresto label-emailresto" "emailresto emailresto" "label-telefonoresto label-telefonoresto" "telefonoresto telefonoresto" "label-personasresto label-personasresto" "personasresto personasresto" "label-fecharesto label-fecharesto" "fecharesto fecharesto" "enviar none";
   gap: 10px; }
 
 #nombreresto, #emailresto, #telefonoresto, #personasresto, #fecharesto {
+  color: white;
   background-color: #470D21;
   border-radius: 5px;
   border: none;
@@ -571,17 +757,23 @@ conteiner-reservaresto {
   display: flex;
   color: #2c1901;
   justify-content: center;
-  margin-top: 250px; }
+  margin-top: 250px;
+  font-family: 'raleway'; }
 
 #enviar1 {
-  color: black;
+  color: white;
   margin-top: 3%;
   grid-area: enviar;
-  background-color: #9C0F48;
+  background-color: #470D21;
   width: 80px;
   height: 40px;
   border: none;
   border-radius: 5px; }
+
+.formulario-reserva {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
 
 /* grid area */
 .label-nombreresto {
@@ -629,6 +821,11 @@ conteiner-reservaresto {
 .div-acordeonbody {
   background-color: beige; }
 
+.redes-sociales, .facebook, .twitter, .instagram, .youtube {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 /*Contacto y ubicación*/
 .bodycontacto {
   background-image: url("../images/fondo-contacto.jpg");
@@ -638,7 +835,7 @@ conteiner-reservaresto {
   text-align: center;
   margin-top: 5%;
   color: #470D21;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'raleway';
   font-size: 40px; }
 
 .formulario-contacto-fieldset {
@@ -647,15 +844,7 @@ conteiner-reservaresto {
   border: none;
   display: grid;
   grid-template-columns: 1fr 80px;
-  grid-template-areas: "label-nombre label-nombre"
- "nombre nombre"
- "label-email label-email"
- "email email"
- "label-telefono label-telefono"
- "telefono telefono"
- "label-mensaje label-mensaje"
- "mensaje mensaje"
- "none enviar";
+  grid-template-areas: "label-nombre label-nombre" "nombre nombre" "label-email label-email" "email email" "label-telefono label-telefono" "telefono telefono" "label-mensaje label-mensaje" "mensaje mensaje" "none enviar";
   gap: 10px; }
 
 #nombre, #email, #telefono, #mensaje {
@@ -707,6 +896,28 @@ label {
 .label-mensaje {
   grid-area: label-mensaje; }
 
+.nuestras-redes {
+  display: flex;
+  flex-direction: column; }
+  .nuestras-redes h1 {
+    text-align: center;
+    font-family: 'raleway';
+    color: #470D21;
+    font-size: 40px; }
+  .nuestras-redes .box-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.facebook a, .twitter a, .instagram a, .youtube a {
+  color: #470D21;
+  width: 30px; }
+  .facebook a:hover, .twitter a:hover, .instagram a:hover, .youtube a:hover {
+    color: #F9E4D4; }
+
+.facebook h5, .twitter h5, .instagram h5, .youtube h5 {
+  color: #F9E4D4; }
+
 /* MEDIA QUERIS */
 @media (max-width: 600px) {
   .column {
@@ -745,4 +956,68 @@ label {
     width: 100%; }
   .cepa {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .header-page {
+    height: 500px;
+    width: 100%;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(136, 37, 62, 0.5), rgba(58, 98, 136, 0.5)), url("../images/fondo-nav.jpg");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(136, 37, 62, 0.5), rgba(58, 98, 136, 0.5)), url("../images/fondo-nav.jpg");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed; }
+  .ilustracion-index {
+    display: flex;
+    flex-direction: column; }
+  .figure {
+    display: flex;
+    flex-direction: column; }
+  .header-page1 {
+    height: 500px;
+    width: 100%;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-cards.jpg");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-cards.jpg");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed; }
+  .header-page2 {
+    height: 500px;
+    width: 100%;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-bod.jpg");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-bod.jpg");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed; }
+  #carousel-img {
+    height: 10%; }
+  .header-page4 {
+    height: 500px;
+    width: 100%;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-vinos.webp");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-resto.webp");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed; } }
+
+@media only screen and (max-width: 600px) {
+  .btn-flotante {
+    font-size: 14px;
+    padding: 12px 20px;
+    bottom: 20px;
+    right: 20px; } }
+
+.redes-sociales, .facebook, .twitter, .instagram, .youtube {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }

@@ -1,10 +1,55 @@
-@import "variables";
+@import "../SASS2/variables";
 
 
+/*index*/
+.ilustracion-index{
+    margin-top: 80px;
+    width: 100%;
+    .h2-index{
+        color: $colorprimario;
+        font-family: 'raleway', sans-serif;
+        font-size: 40px;
+        text-align: center;
+}
+}
+
+.figure{
+    display: flex;
+    justify-content: space-evenly;
+    img{
+        height: 500px;
+    }
+}
+
+
+
+.contenido-texto{
+    margin-top: 40px;
+    p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h3{
+        font-family: 'raleway';
+    span{
+    background-color: $colorprimario;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .8);
+    }
+
+}
+}
 
 /* CARDS INDEX */
 .cards-index{
-    background-color: $colorterciario;
+    background: -webkit-linear-gradient(to right, hsla(345, 57%, 34%, 0.3), hsla(209, 40%, 38%, 0.3)), url("../images/fondo-cards-index.webp");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(345, 57%, 34%, 0.3), hsla(209, 40%, 38%, 0.3)), url("../images/fondo-cards-index.webp");
     padding: 1%;
     margin: 0.5%;
     margin-top: 3%;

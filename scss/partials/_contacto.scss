@@ -1,5 +1,5 @@
-@import "variables";
-
+@import "../SASS2/variables";
+@import "../SASS2/extend";
 
 /*Contacto y ubicación*/
 
@@ -12,7 +12,7 @@
     text-align: center;
     margin-top: 5%;
     color: $colorprimario;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'raleway';
     font-size: 40px;
 }
 
@@ -34,8 +34,6 @@
     "none enviar";
     gap: 10px;
 }
-
-
 
 
 
@@ -81,3 +79,32 @@ label{
 #telefono{grid-area: telefono;}
 .label-mensaje{ grid-area: label-mensaje;}
 
+.nuestras-redes{
+    display: flex;
+    flex-direction: column;
+    h1{
+        text-align: center;
+        font-family: 'raleway';
+        color: $colorprimario;
+        font-size: 40px;
+    }
+    .box-redes{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+.facebook, .twitter, .instagram, .youtube{
+    @extend .redes-sociales;
+    a{
+        color: $colorprimario;
+        width: 30px;
+        &:hover{
+            color: $colorterciario;
+        }
+    }
+    h5{
+        color: $colorterciario;
+    }
+}

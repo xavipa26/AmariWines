@@ -1,5 +1,5 @@
-@import "mixins";
-@import "variables";
+@import "../SASS2/mixins";
+@import "../SASS2/variables";
 
 
 /*HAGO PAGINA NOSOTROS*/
@@ -7,36 +7,32 @@
 
 
 .section-nuestrahistoria{
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 250px 250px 250px;
     grid-template-areas:
-    "conteiner-h2-historia conteiner-h2-historia conteiner-h2-historia"
-    "primerospasos primerospasos img-pasos"
-    "img-gente nuestragente nuestragente"
-    "produccion produccion img-produccion "
+    "h2-historia h2-historia h2-historia"
+    "h2-primerospasos h2-primerospasos h2-primerospasos"
+    "primerospasos primerospasos primerospasos"
+    "h2-nuestragente h2-nuestragente h2-nuestragente"
+    "nuestragente nuestragente nuestragente"
+    "h2-produccion h2-produccion h2-produccion"
+    "produccion produccion produccion "
     "galery row galery1"
     "h2-linea h2-linea h2-linea"
     "carouselaños carouselaños carouselaños";
-    gap: 50px;
+    gap: 20px;
     justify-items: center;
     align-items: center;
 }
 
 
-.conteiner-h2-historia{
-    display: flex;
-    flex-direction: row;
-    background-image: image(bodega1);
-    width: 100%;
-    height: 16rem;
-}
-
 .h2-historia {
-    margin: auto;
-    display: flex;
-    justify-self: center;
+    background-image: url("../images/fondo-cards1.jpg");
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
     grid-area: h2-historia;
     color: $colorsecundario;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -44,11 +40,10 @@
 }
 
 .h2-primerospasos, .h2-nuestragente, .h2-produccion{
-    display: flex;
     color: $colorprimario;
     padding: 1%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-family: 'raleway';
+    font-size: 30px;
     justify-content: center;
 }
 
@@ -66,25 +61,23 @@
     grid-area: carouselaños;
 }
 
-.img-pasos {
-    grid-area: img-pasos;
+.h2-produccion{
+    grid-area: h2-produccion;
 }
 
+.h2-nuestragente{
+    grid-area: h2-nuestragente;
+}
 .nuestragente{
     grid-area: nuestragente;
 }
 
-.img-gente{
-    grid-area: img-gente;
-}
 
 .produccion {
     grid-area: produccion;
 }
 
-.img-produccion{
-    grid-area: img-produccion;
-}
+
 
 .row{
     grid-area: row;
@@ -102,6 +95,9 @@
     grid-area: conteiner-h2-historia;
 }
 
+.h2-primerospasos{
+    grid-area: h2-primerospasos;
+}
 /* IMAGENES INTRO NOSOTROS */
 .img-gente{
     width: 300px;
@@ -120,25 +116,37 @@
 /* DIVS CARDS INTRO */
 
 .primerospasos{
+    background-image: url("../images/fondo-cards1.jpg");
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     @include card-nosotros (#d67d3e2b, 100%, 10px, Verdana, 5%);
-    margin-left: 5%;
+    width: 100%;
     p{
         @include card-nosotros-p (verdana, justify, 1rem, 15px);
     }
 }
 
+
 .nuestragente{
+    background-image: url("../images/fondo-cards1.jpg");
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     @include card-nosotros (#d67d3e2b, 100%, 10px, Verdana, 5%);
-    margin-right: 5%;
+    width: 100%;
     p{
         @include card-nosotros-p (verdana, justify, 1rem, 15px)
     }
 }
 
 .produccion{
+    background-image: url("../images/fondo-cards1.jpg");
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     @include card-nosotros (#d67d3e2b, 100%, 10px, Verdana, 5%);
-    margin-left: 5%;
-    margin-top: 5%;
+    width: 100%;
     p{
         @include card-nosotros-p (verdana, justify, 1rem, 15px)
     }
@@ -151,7 +159,8 @@
 
 
 #imgbod:hover{
-    transform: scale(2.5);
+    filter: grayscale(80%);
+    transform: scale(1.2);
     transition: all 400ms ease;
     cursor: pointer;
 }
@@ -170,13 +179,15 @@
 
 .galery{
     display: flex;
+    width: 100%;
     flex-direction: column;
-    margin-left: 5%;
     text-align: justify;
     .h2-row{
         text-align: center;
+        font-family: 'raleway';
     }
-    #p-row{
+    .p-row{
+        padding: 5px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: justify;
     }
@@ -184,10 +195,15 @@
 
 .galery1{
     display: flex;
+    width: 100%;
     flex-direction: column;
     margin-right: 5%;
     text-align: justify;
-    #p-row1{
+    .h2-row{
+        font-family: 'raleway';
+    }
+    .p-row1{
+        padding: 5px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: justify;
     }
@@ -238,3 +254,4 @@
     background-color: #9C0F48;
     position: absolute;
 }
+

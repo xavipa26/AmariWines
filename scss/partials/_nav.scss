@@ -1,48 +1,266 @@
-@import "variables";
+@import "../SASS2/variables";
 
 /* NAV PARA TODAS LAS PAGINAS */
-.menu-index{
-    background-color: $colorprimario;
+
+.header-page {
+    height: 600px;
+    width: 100%;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(345, 57%, 34%, 0.5), hsla(209, 40%, 38%, 0.5)), url("../images/fondo-nav.jpg");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(345, 57%, 34%, 0.5), hsla(209, 40%, 38%, 0.5)), url("../images/fondo-nav.jpg");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    img:hover{
+        border-radius: 2px;
+        transform: scale(3.7);
+        margin-left: 30px;
+        margin-top: 30px;
+        transition: all 600ms ease;
+    }
+    }
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.titulo-nav{
+    text-align:center;
+    margin-top: 20%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+}
+
+
+.menu-index {
     display: flex;
     font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.185);
 }
 
-.conteiner-index a{
-    color: white;
+.conteiner-index a {
+    color: black;
 }
 
-#nav-inicio{
+.nav-a {
+    margin-left: 17.5px;
+    margin-right: 17.5px;
+}
+
+.dropdown-nav {
+    background: none;
+    background-color: rgba(255, 255, 255, 0.185);
+    width: 25px;
+    margin-right: 15px;
+}
+
+#nav-inicio {
     font-size: 1.4rem;
 }
+
 /* MENU DROPDOWN INDEX */
 
-.conteiner-index #index-dropdown{
+.conteiner-index #index-dropdown {
     color: rgb(0, 0, 0);
 }
 
-.conteiner-index #index-dropdown:hover{
+.conteiner-index #index-dropdown:hover {
     color: #ffffff;
     background-color: $colorprimario;
 }
 
-.conteiner-index a:hover{
+.conteiner-index a:hover {
     display: flexbox;
-    justify-content:space-between;
+    justify-content: space-between;
     color: $colorsecundario;
 }
 
 /* BUTTONS SEARCH INDEX */
-.buton-search{
+.buton-search {
     color: $colorterciario;
     border: 2px solid $colorterciario;
 }
-.buton-search:hover{
+
+.buton-search:hover {
     background-color: $colorsecundario;
     border: 2px solid $colorterciario;
 }
 
 /* button colapse */
 
-#navicon{
+#navicon {
     height: 2.5rem;
 }
+
+/*NAV NOSOTROS*/
+
+.header-page1 {
+    height: 600px;
+    width: 100%;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(345, 6%, 88%, 0.5), hsla(0, 49%, 57%, 0.5)), url("../images/fondo-cards.jpg");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(345, 6%, 88%, 0.5), hsla(0, 49%, 57%, 0.5)), url("../images/fondo-cards.jpg");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    img:hover{
+        border-radius: 2px;
+        transform: scale(3.7);
+        margin-left: 30px;
+        margin-top: 30px;
+        transition: all 600ms ease;
+    }
+    }
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.titulo-nav1{
+    text-align:center;
+    margin-top: 20%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+}
+
+
+/*NAV BODEGA*/
+
+.header-page2 {
+    height: 600px;
+    width: 100%;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(345, 6%, 88%, 0.5), hsla(0, 49%, 57%, 0.5)), url("../images/fondo-bod.jpg");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(345, 6%, 88%, 0.5), hsla(0, 49%, 57%, 0.5)), url("../images/fondo-bod.jpg");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    img:hover{
+        border-radius: 2px;
+        transform: scale(3.7);
+        margin-left: 30px;
+        margin-top: 30px;
+        transition: all 600ms ease;
+    }
+    }
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.titulo-nav2{
+    text-align:center;
+    margin-top: 20%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+}
+
+
+/*Nav tienda*/
+
+.header-page3 {
+    height: 600px;
+    width: 100%;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(345, 6%, 88%, 0.5), hsla(0, 49%, 57%, 0.5)), url("../images/fondo-vinos.webp");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(345, 6%, 88%, 0.5), hsla(0, 49%, 57%, 0.5)), url("../images/fondo-vinos.webp");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    img:hover{
+        border-radius: 2px;
+        transform: scale(3.7);
+        margin-left: 30px;
+        margin-top: 30px;
+        transition: all 600ms ease;
+    }
+    }
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.titulo-nav3{
+    text-align:center;
+    margin-top: 20%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+}
+
+
+/*NAV RESTO*/
+
+
+.header-page4 {
+    height: 600px;
+    width: 100%;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(345, 6%, 88%, 0.5), hsla(0, 49%, 57%, 0.5)), url("../images/fondo-vinos.webp");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(345, 6%, 88%, 0.5), hsla(0, 49%, 57%, 0.5)), url("../images/fondo-resto.webp");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    img:hover{
+        border-radius: 2px;
+        transform: scale(3.7);
+        margin-left: 30px;
+        margin-top: 30px;
+        transition: all 600ms ease;
+    }
+    }
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.texto-header4{
+    .titulo-nav4{
+        text-align:center;
+        margin-top: 5%;
+        font-family: 'Raleway', sans-serif;
+        font-size: 45px;
+    }
+    p{
+        width: 70%;
+        text-align: justify;
+        margin: auto;
+        margin-top: 2%;
+    }
+    .p-restoult{
+        margin-top: 1%;
+    }
+}
+
+
+
+/*NAV CONTACTO*/
+.header-page5 {
+    width: 100%;
+    img:hover{
+        border-radius: 2px;
+        transform: scale(3.7);
+        margin-left: 30px;
+        margin-top: 30px;
+        transition: all 600ms ease;
+    }
+    }

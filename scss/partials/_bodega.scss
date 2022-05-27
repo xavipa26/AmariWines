@@ -1,15 +1,11 @@
-@import "mixins";
-@import "variables";
+@import "../SASS2/mixins";
+@import "../SASS2/variables";
 /*BODEGA*/
 
 .conteiner-bodega{
     display: flex;
     flex-direction: column;
-    #bod{
-        text-align: center;
-        width: 100%;
-        margin-top: 1rem;
-    }
+    margin-top: 5%;
     .elemento-divider{
         display: flex;
         background-color: black;

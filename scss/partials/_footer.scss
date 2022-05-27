@@ -1,26 +1,12 @@
-@import "variables";
+@import "../SASS2/variables";
 
 
 /*footer para todas las paginas*/
 
-.footdown1{
-    position: relative;
-    background-color: $colorsecundario;
-    margin-top: 5%;
-    height: 20%;
-}
-
-.text-index{
-    color: aliceblue;
-}
-
-.imgindex{
-    height: 50%;
-}
-
 .footer-down{
     background-color:$colorprimario;
     color: aliceblue;
+    margin-top: 5%;
 }
 
 .footer-down a{
