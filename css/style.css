@@ -11,7 +11,7 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed; }
-  .header-page img:hover {
+  .header-page .logotipo:hover {
     border-radius: 2px;
     transform: scale(3.7);
     margin-left: 30px;
@@ -88,7 +88,7 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed; }
-  .header-page1 img:hover {
+  .header-page1 .logotipo:hover {
     border-radius: 2px;
     transform: scale(3.7);
     margin-left: 30px;
@@ -118,7 +118,7 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed; }
-  .header-page2 img:hover {
+  .header-page2 .logotipo:hover {
     border-radius: 2px;
     transform: scale(3.7);
     margin-left: 30px;
@@ -148,7 +148,7 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed; }
-  .header-page3 img:hover {
+  .header-page3 .logotipo:hover {
     border-radius: 2px;
     transform: scale(3.7);
     margin-left: 30px;
@@ -178,7 +178,7 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed; }
-  .header-page4 img:hover {
+  .header-page4 .logotipo:hover {
     border-radius: 2px;
     transform: scale(3.7);
     margin-left: 30px;
@@ -208,7 +208,7 @@
 /*NAV CONTACTO*/
 .header-page5 {
   width: 100%; }
-  .header-page5 img:hover {
+  .header-page5 .logotipo:hover {
     border-radius: 2px;
     transform: scale(3.7);
     margin-left: 30px;
@@ -925,6 +925,9 @@ label {
     padding: 6px; } }
 
 @media screen and (max-width: 768px) {
+  #navicon {
+    height: 2rem;
+    border: none; }
   /* acomodo sección nostros */
   .section-nuestrahistoria {
     display: flex;
