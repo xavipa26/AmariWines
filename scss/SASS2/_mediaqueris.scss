@@ -73,7 +73,7 @@
         align-items: center;
     }
     .header-page {
-        height: 500px;
+        height: 600px;
         width: 100%;
         background: #3a6186;
         /* fallback for old browsers */
@@ -83,6 +83,9 @@
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         background-size: cover;
         background-attachment: fixed;
+        .wave{
+            bottom: 20px;
+        }
         }
     .ilustracion-index{
         display: flex ;
@@ -93,7 +96,7 @@
         flex-direction: column;
     }
     .header-page1 {
-        height: 500px;
+        height: 600px;
         width: 100%;
         background: #3a6186;
         /* fallback for old browsers */
@@ -103,10 +106,13 @@
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         background-size: cover;
         background-attachment: fixed;
+        .wave{
+            bottom: 20px;
+        }
         }
     
         .header-page2 {
-            height: 500px;
+            height: 600px;
             width: 100%;
             background: #3a6186;
             /* fallback for old browsers */
@@ -116,6 +122,9 @@
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             background-size: cover;
             background-attachment: fixed;
+            .wave{
+                bottom: 20px;
+            }
             }
 
             #carousel-img{
@@ -123,7 +132,7 @@
             }
         
             .header-page4 {
-                height: 500px;
+                height: 600px;
                 width: 100%;
                 background: #3a6186;
                 /* fallback for old browsers */
@@ -133,6 +142,9 @@
                 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 background-size: cover;
                 background-attachment: fixed;
+                .wave{
+                    bottom: 20px;
+                }
                 }
     
     .section-nuestrahistoria{
