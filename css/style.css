@@ -744,20 +744,24 @@
 /*FORMULARIO DE RESERVA*/
 .formulario-reserva-fieldset {
   margin: auto;
+  width: 100%;
   border: none;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "label-nombreresto label-nombreresto" "nombreresto nombreresto" "label-emailresto label-emailresto" "emailresto emailresto" "label-telefonoresto label-telefonoresto" "telefonoresto telefonoresto" "label-personasresto label-personasresto" "personasresto personasresto" "label-fecharesto label-fecharesto" "fecharesto fecharesto" "enviar none";
   gap: 10px; }
+  .formulario-reserva-fieldset label {
+    margin-left: 20%; }
 
 #nombreresto, #emailresto, #telefonoresto, #personasresto, #fecharesto {
   color: white;
+  margin: auto;
   background-color: #470D21;
   border-radius: 5px;
   border: none;
   height: 40px;
-  padding: 5px;
-  width: 600px; }
+  padding: 10px;
+  width: 60%; }
 
 conteiner-reservaresto {
   display: flex;
@@ -774,6 +778,7 @@ conteiner-reservaresto {
 #enviar1 {
   color: white;
   margin-top: 3%;
+  margin: auto;
   grid-area: enviar;
   background-color: #470D21;
   width: 80px;
@@ -812,6 +817,9 @@ conteiner-reservaresto {
 .label-personasresto {
   grid-area: label-personasresto;
   color: #2c1901; }
+
+#emailresto {
+  color: white; }
 
 #personas {
   grid-area: personasresto; }
@@ -936,23 +944,20 @@ label {
     padding: 6px; } }
 
 @media screen and (max-width: 768px) {
-  #navicon {
-    height: 2rem;
-    border: none; }
-  /* acomodo sección nostros */
   #carouseltime {
     height: 300px;
     width: 100%; }
-  #imgbod:hover {
-    transform: scale(1);
-    transition: all 400ms ease;
-    cursor: pointer; }
+  /*TIENDA*/
   .vinos-certificacion {
     display: flex;
     flex-direction: column; }
     .vinos-certificacion .conteiner-cajas {
       display: flex;
       flex-direction: column; }
+  .cepa {
+    flex-direction: column;
+    align-items: center; }
+  /*NOSOTROS*/
   .section-nuestrahistoria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -974,9 +979,10 @@ label {
   .row {
     display: flex;
     flex-direction: column; }
-  .cepa {
-    flex-direction: column;
-    align-items: center; }
+  /*HEADERS*/
+  #navicon {
+    height: 2rem;
+    border: none; }
   .header-page {
     height: 500px;
     width: 100%;
@@ -990,12 +996,6 @@ label {
     background-attachment: fixed; }
     .header-page .wave {
       display: none; }
-  .ilustracion-index {
-    display: flex;
-    flex-direction: column; }
-  .figure {
-    display: flex;
-    flex-direction: column; }
   .header-page1 {
     height: 500px;
     width: 100%;
@@ -1022,8 +1022,6 @@ label {
     background-attachment: fixed; }
     .header-page2 .wave {
       display: none; }
-  #carousel-img {
-    height: 10%; }
   .header-page4 {
     height: 700px;
     width: 100%;
@@ -1050,9 +1048,41 @@ label {
     background-attachment: fixed; }
     .header-page3 .wave {
       display: none; }
-  .video-restaurante {
+  .header-page4 {
+    height: 700px;
     width: 100%;
-    margin-top: 0px; }
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-vinos.webp");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-resto.webp");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed; }
+    .header-page4 .wave {
+      display: none; }
+  .header-page3 {
+    height: 500px;
+    width: 100%;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-vinos.webp");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-vinos.webp");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed; }
+    .header-page3 .wave {
+      display: none; }
+  /*INDEX*/
+  .ilustracion-index {
+    display: flex;
+    flex-direction: column; }
+  .figure {
+    display: flex;
+    flex-direction: column; }
+  #carousel-img {
+    height: 10%; }
   .section-nuestrahistoria {
     margin-top: 10%; }
   .primerospasos, .nuestragente, .produccion {
@@ -1064,6 +1094,11 @@ label {
       width: 100%; }
     .primerospasos .img-cardsintro, .nuestragente .img-cardsintro, .produccion .img-cardsintro {
       margin: auto; }
+  /*BODEGA*/
+  #imgbod:hover {
+    transform: scale(1);
+    transition: all 400ms ease;
+    cursor: pointer; }
   .conteiner-bodega {
     display: flex;
     flex-direction: column;
@@ -1098,7 +1133,53 @@ label {
       margin-bottom: 5%;
       margin-left: auto;
       margin-right: auto;
-      width: 100%; } }
+      width: 100%; }
+  /*RESTAURANTE*/
+  .conteiner-reservaresto {
+    width: 100%; }
+    .conteiner-reservaresto .nombre-resto {
+      width: 100%; }
+      .conteiner-reservaresto .nombre-resto .formulario-reserva {
+        width: 100%; }
+        .conteiner-reservaresto .nombre-resto .formulario-reserva #nombreresto {
+          width: 50%; }
+  .video-restaurante {
+    width: 100%;
+    margin-top: 0px; }
+  .parent {
+    text-align: center;
+    margin-top: 20%; }
+    .parent h1 {
+      color: #470D21;
+      margin-top: 4%;
+      margin-bottom: 30%;
+      font-family: 'raleway'; }
+    .parent .zoom {
+      border: 2px solid black;
+      margin-top: 12%;
+      width: 4rem;
+      height: 4rem;
+      transition: all 2s ease; }
+      .parent .zoom:hover {
+        transform: scale(5.5); }
+  #enviar1 {
+    color: white;
+    margin-top: 3%;
+    margin: auto;
+    grid-area: enviar;
+    background-color: #470D21;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 5px; }
+  .formulario-reserva-fieldset {
+    width: 100%;
+    margin: auto;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "label-nombreresto label-nombreresto" "nombreresto nombreresto" "label-emailresto label-emailresto" "emailresto emailresto" "label-telefonoresto label-telefonoresto" "telefonoresto telefonoresto" "label-personasresto label-personasresto" "personasresto personasresto" "label-fecharesto label-fecharesto" "fecharesto fecharesto" "enviar none";
+    gap: 10px; } }
 
 @media only screen and (max-width: 600px) {
   .btn-flotante {

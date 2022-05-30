@@ -38,6 +38,7 @@
 
 .formulario-reserva-fieldset{
     margin:auto;
+    width: 100%;
     border: none;
     display: grid;
     grid-template-columns: 1fr;
@@ -54,18 +55,22 @@
     "fecharesto fecharesto"
     "enviar none";
     gap: 10px;
+    label{
+        margin-left: 20%;
+    }
 }
 
 
 
 #nombreresto, #emailresto, #telefonoresto, #personasresto, #fecharesto{
     color: white;
+    margin: auto;
     background-color:$colorprimario;
     border-radius: 5px;
     border: none;
     height: 40px;
-    padding: 5px;
-    width: 600px;
+    padding: 10px;
+    width: 60%;
 }
 
 conteiner-reservaresto{
@@ -87,6 +92,7 @@ conteiner-reservaresto{
 #enviar1{
     color: rgb(255, 255, 255);
     margin-top: 3%;
+    margin: auto;
     grid-area: enviar;
     background-color: $colorprimario;
     width: 80px;
@@ -119,6 +125,7 @@ conteiner-reservaresto{
     grid-area: label-personasresto;
     color:rgb(44, 25, 1);
 }
+#emailresto{color: white;}
 #personas{
     grid-area: personasresto;
 }
