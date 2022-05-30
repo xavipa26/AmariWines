@@ -1050,6 +1050,9 @@ label {
     background-attachment: fixed; }
     .header-page3 .wave {
       display: none; }
+  .video-restaurante {
+    width: 100%;
+    margin-top: 0px; }
   .section-nuestrahistoria {
     margin-top: 10%; }
   .primerospasos, .nuestragente, .produccion {
