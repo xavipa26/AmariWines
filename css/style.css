@@ -1,4 +1,7 @@
 @charset "UTF-8";
+* {
+  padding: 0; }
+
 /* NAV PARA TODAS LAS PAGINAS */
 .header-page {
   height: 600px;
@@ -11,12 +14,13 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed; }
-  .header-page .logotipo:hover {
-    border-radius: 2px;
-    transform: scale(3.7);
-    margin-left: 30px;
-    margin-top: 30px;
-    transition: all 600ms ease; }
+
+.logotipo:hover {
+  border-radius: 2px;
+  transform: scale(3.7);
+  margin-left: 30px;
+  margin-top: 30px;
+  transition: all 600ms ease; }
 
 .wave {
   position: absolute;
@@ -264,7 +268,8 @@
       width: 30px;
       height: 30px;
       margin-bottom: 5px;
-      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.8); }
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.8);
+      overflow-y: hidden; }
 
 /* CARDS INDEX */
 .cards-index {
@@ -285,7 +290,8 @@
     display: flex;
     align-self: center; }
   .cards-index h5 {
-    color: #470D21; }
+    color: #470D21;
+    overflow-y: hidden; }
 
 .butoncard-search {
   width: 50%;
@@ -299,6 +305,7 @@
 
 /*HAGO PAGINA NOSOTROS*/
 .section-nuestrahistoria {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "h2-historia h2-historia h2-historia" "h2-primerospasos h2-primerospasos h2-primerospasos" "primerospasos primerospasos primerospasos" "h2-nuestragente h2-nuestragente h2-nuestragente" "nuestragente nuestragente nuestragente" "h2-produccion h2-produccion h2-produccion" "produccion produccion produccion " "galery row galery1" "h2-linea h2-linea h2-linea" "carouselaños carouselaños carouselaños";
@@ -360,7 +367,8 @@
   grid-area: conteiner-h2-historia; }
 
 .h2-primerospasos {
-  grid-area: h2-primerospasos; }
+  grid-area: h2-primerospasos;
+  margin-top: 5%; }
 
 /* IMAGENES INTRO NOSOTROS */
 .img-gente {
@@ -384,13 +392,13 @@
   background-color: #d67d3e2b;
   width: 100%;
   padding: 10px;
-  font-family: Verdana;
-  width: 100%; }
+  font-family: Verdana; }
   .primerospasos p {
     font-family: verdana;
     text-align: justify;
     font-size: 1rem;
-    padding: 15px; }
+    padding: 15px;
+    width: 80%; }
 
 .nuestragente {
   background-image: url("../images/fondo-cards1.jpg");
@@ -400,13 +408,13 @@
   background-color: #d67d3e2b;
   width: 100%;
   padding: 10px;
-  font-family: Verdana;
-  width: 100%; }
+  font-family: Verdana; }
   .nuestragente p {
     font-family: verdana;
     text-align: justify;
     font-size: 1rem;
-    padding: 15px; }
+    padding: 15px;
+    width: 80%; }
 
 .produccion {
   background-image: url("../images/fondo-cards1.jpg");
@@ -416,13 +424,13 @@
   background-color: #d67d3e2b;
   width: 100%;
   padding: 10px;
-  font-family: Verdana;
-  width: 100%; }
+  font-family: Verdana; }
   .produccion p {
     font-family: verdana;
     text-align: justify;
     font-size: 1rem;
-    padding: 15px; }
+    padding: 15px;
+    width: 80%; }
 
 #imgbod {
   width: 100%; }
