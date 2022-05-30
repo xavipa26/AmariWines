@@ -8,7 +8,12 @@
 
 @media screen and (max-width: 768px){
 
-
+                                            /*NAV*/
+    .dropdown-menu{
+        ul{
+            width: 100%;
+        }
+    }
     #carouseltime{
         height: 300px;
         width: 100%;
@@ -69,6 +74,23 @@
     .row{
         display: flex;
         flex-direction: column;
+    }
+
+    .primerospasos, .nuestragente, .produccion{
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        background-color: $colorterciario;
+        p{
+            width: 100%;
+        }
+        .img-cardsintro{
+            margin: auto;
+        }
+    }
+
+    .section-nuestrahistoria{
+        margin-top: 10%;
     }
 
 
@@ -205,21 +227,18 @@
         height: 10%;
     }
     
-    .section-nuestrahistoria{
-        margin-top: 10%;
-    }
-    .primerospasos, .nuestragente, .produccion{
-        display: flex;
-        flex-direction: column;
-        background-image: none;
-        background-color: $colorterciario;
+    .contenido-texto{
+        width: 80%;
+        margin: auto;
+        span{
+            margin-right: 5px;
+        }
         p{
-            width: 100%;
-        }
-        .img-cardsintro{
-            margin: auto;
+            text-align: justify;
         }
     }
+
+
 
     /*BODEGA*/
     #imgbod:hover{

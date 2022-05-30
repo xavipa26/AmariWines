@@ -945,6 +945,9 @@ label {
     padding: 6px; } }
 
 @media screen and (max-width: 768px) {
+  /*NAV*/
+  .dropdown-menu ul {
+    width: 100%; }
   #carouseltime {
     height: 300px;
     width: 100%; }
@@ -980,6 +983,17 @@ label {
   .row {
     display: flex;
     flex-direction: column; }
+  .primerospasos, .nuestragente, .produccion {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background-color: #F9E4D4; }
+    .primerospasos p, .nuestragente p, .produccion p {
+      width: 100%; }
+    .primerospasos .img-cardsintro, .nuestragente .img-cardsintro, .produccion .img-cardsintro {
+      margin: auto; }
+  .section-nuestrahistoria {
+    margin-top: 10%; }
   /*HEADERS*/
   #navicon {
     height: 2rem;
@@ -1084,17 +1098,13 @@ label {
     flex-direction: column; }
   #carousel-img {
     height: 10%; }
-  .section-nuestrahistoria {
-    margin-top: 10%; }
-  .primerospasos, .nuestragente, .produccion {
-    display: flex;
-    flex-direction: column;
-    background-image: none;
-    background-color: #F9E4D4; }
-    .primerospasos p, .nuestragente p, .produccion p {
-      width: 100%; }
-    .primerospasos .img-cardsintro, .nuestragente .img-cardsintro, .produccion .img-cardsintro {
-      margin: auto; }
+  .contenido-texto {
+    width: 80%;
+    margin: auto; }
+    .contenido-texto span {
+      margin-right: 5px; }
+    .contenido-texto p {
+      text-align: justify; }
   /*BODEGA*/
   #imgbod:hover {
     transform: scale(1);
