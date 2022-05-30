@@ -73,7 +73,7 @@
         align-items: center;
     }
     .header-page {
-        height: 600px;
+        height: 500px;
         width: 100%;
         background: #3a6186;
         /* fallback for old browsers */
@@ -84,7 +84,7 @@
         background-size: cover;
         background-attachment: fixed;
         .wave{
-            bottom: 20px;
+            display: none;
         }
         }
     .ilustracion-index{
@@ -96,7 +96,7 @@
         flex-direction: column;
     }
     .header-page1 {
-        height: 600px;
+        height: 500px;
         width: 100%;
         background: #3a6186;
         /* fallback for old browsers */
@@ -107,12 +107,12 @@
         background-size: cover;
         background-attachment: fixed;
         .wave{
-            bottom: 20px;
+            display: none;
         }
         }
     
         .header-page2 {
-            height: 600px;
+            height: 500px;
             width: 100%;
             background: #3a6186;
             /* fallback for old browsers */
@@ -123,7 +123,7 @@
             background-size: cover;
             background-attachment: fixed;
             .wave{
-                bottom: 20px;
+                display: none;
             }
             }
 
@@ -132,7 +132,7 @@
             }
         
             .header-page4 {
-                height: 600px;
+                height: 500px;
                 width: 100%;
                 background: #3a6186;
                 /* fallback for old browsers */
@@ -143,7 +143,7 @@
                 background-size: cover;
                 background-attachment: fixed;
                 .wave{
-                    bottom: 20px;
+                    display: none;
                 }
                 }
     

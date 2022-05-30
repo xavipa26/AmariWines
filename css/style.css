@@ -4,7 +4,7 @@
 
 /* NAV PARA TODAS LAS PAGINAS */
 .header-page {
-  height: 600px;
+  height: 560px;
   width: 100%;
   background: #3a6186;
   /* fallback for old browsers */
@@ -84,7 +84,7 @@
 
 /*NAV NOSOTROS*/
 .header-page1 {
-  height: 600px;
+  height: 560px;
   width: 100%;
   background: #3a6186;
   /* fallback for old browsers */
@@ -114,7 +114,7 @@
 
 /*NAV BODEGA*/
 .header-page2 {
-  height: 600px;
+  height: 560px;
   width: 100%;
   background: #3a6186;
   /* fallback for old browsers */
@@ -144,7 +144,7 @@
 
 /*Nav tienda*/
 .header-page3 {
-  height: 600px;
+  height: 560px;
   width: 100%;
   background: #3a6186;
   /* fallback for old browsers */
@@ -174,7 +174,7 @@
 
 /*NAV RESTO*/
 .header-page4 {
-  height: 600px;
+  height: 560px;
   width: 100%;
   background: #3a6186;
   /* fallback for old browsers */
@@ -241,7 +241,7 @@
 
 /*index*/
 .ilustracion-index {
-  margin-top: 80px;
+  margin-top: 120px;
   width: 100%; }
   .ilustracion-index .h2-index {
     color: #470D21;
@@ -977,7 +977,7 @@ label {
     flex-direction: column;
     align-items: center; }
   .header-page {
-    height: 600px;
+    height: 500px;
     width: 100%;
     background: #3a6186;
     /* fallback for old browsers */
@@ -988,7 +988,7 @@ label {
     background-size: cover;
     background-attachment: fixed; }
     .header-page .wave {
-      bottom: 20px; }
+      display: none; }
   .ilustracion-index {
     display: flex;
     flex-direction: column; }
@@ -996,7 +996,7 @@ label {
     display: flex;
     flex-direction: column; }
   .header-page1 {
-    height: 600px;
+    height: 500px;
     width: 100%;
     background: #3a6186;
     /* fallback for old browsers */
@@ -1007,9 +1007,9 @@ label {
     background-size: cover;
     background-attachment: fixed; }
     .header-page1 .wave {
-      bottom: 20px; }
+      display: none; }
   .header-page2 {
-    height: 600px;
+    height: 500px;
     width: 100%;
     background: #3a6186;
     /* fallback for old browsers */
@@ -1020,11 +1020,11 @@ label {
     background-size: cover;
     background-attachment: fixed; }
     .header-page2 .wave {
-      bottom: 20px; }
+      display: none; }
   #carousel-img {
     height: 10%; }
   .header-page4 {
-    height: 600px;
+    height: 500px;
     width: 100%;
     background: #3a6186;
     /* fallback for old browsers */
@@ -1035,7 +1035,7 @@ label {
     background-size: cover;
     background-attachment: fixed; }
     .header-page4 .wave {
-      bottom: 20px; }
+      display: none; }
   .section-nuestrahistoria {
     margin-top: 10%; }
   .primerospasos, .nuestragente, .produccion {
