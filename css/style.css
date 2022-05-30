@@ -168,7 +168,7 @@
 
 .titulo-nav3 {
   text-align: center;
-  margin-top: 20%;
+  margin-top: 10%;
   font-family: 'Raleway', sans-serif;
   font-size: 45px; }
 
@@ -664,7 +664,8 @@
 .conteiner-bodega {
   display: flex;
   flex-direction: column;
-  margin-top: 5%; }
+  margin-top: 5%;
+  background-image: linear-gradient(to bottom, white 10%, rgba(128, 25, 25, 0.849) 95%); }
   .conteiner-bodega .elemento-divider {
     display: flex;
     background-color: black;
@@ -719,7 +720,7 @@
 /*Pagina restaurante*/
 /*ARMO INTRO Y IFRAME COMERCIAL*/
 .video-restaurante {
-  background-image: linear-gradient(white, #470D21);
+  background-image: linear-gradient(to bottom, white 10%, #470D21 90%);
   margin-top: 60px;
   display: flex;
   justify-content: center; }

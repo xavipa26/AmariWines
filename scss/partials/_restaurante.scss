@@ -7,7 +7,7 @@
 
 
 .video-restaurante{
-    background-image: linear-gradient( white, $colorprimario);
+    background-image: linear-gradient( to bottom, white 10%, $colorprimario 90%);
     margin-top: 60px;
     display: flex;
     justify-content: center;
