@@ -1,6 +1,4 @@
 # AmariWines
-
-# AmariWines
 Amari Wines es una empresa, bodega y restaurante boutique, ubicado en la provincia de Mendoza en el maravilloso oasis del Valle de Uco.
 Cada una de las paginas del sitio web fue creada a partir de paletas de colores inspiradas en el cielo azul, el marron de la fertil tierra donde nace la vid que da vida a Amari y la historia que ha transcurrido en ella.
 
