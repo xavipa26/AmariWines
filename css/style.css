@@ -1036,6 +1036,19 @@ label {
     background-attachment: fixed; }
     .header-page4 .wave {
       display: none; }
+  .header-page3 {
+    height: 500px;
+    width: 100%;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-vinos.webp");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(226, 223, 223, 0.5), rgba(199, 92, 92, 0.5)), url("../images/fondo-vinos.webp");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed; }
+    .header-page3 .wave {
+      display: none; }
   .section-nuestrahistoria {
     margin-top: 10%; }
   .primerospasos, .nuestragente, .produccion {

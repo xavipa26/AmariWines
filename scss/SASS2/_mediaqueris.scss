@@ -147,6 +147,23 @@
                 }
                 }
     
+                .header-page3 {
+                    height: 500px;
+                    width: 100%;
+                    background: #3a6186;
+                    /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, hsla(345, 6%, 88%, 0.5), hsla(0, 49%, 57%, 0.5)), url("../images/fondo-vinos.webp");
+                    /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, hsla(345, 6%, 88%, 0.5), hsla(0, 49%, 57%, 0.5)), url("../images/fondo-vinos.webp");
+                    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    background-size: cover;
+                    background-attachment: fixed;
+                    .wave{
+                        display: none;
+                    }
+                    }
+
+    
     .section-nuestrahistoria{
         margin-top: 10%;
     }
