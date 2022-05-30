@@ -176,8 +176,53 @@
         flex-direction: column;
         background-image: none;
         background-color: $colorterciario;
+        p{
+            width: 100%;
+        }
         .img-cardsintro{
             margin: auto;
+        }
+    }
+    .conteiner-bodega{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        background-image: linear-gradient( to bottom, white 10%, rgba(128, 25, 25, 0.849) 95%);
+        .elemento-divider{
+            display: flex;
+            background-color: black;
+            width: 100%;
+            span{
+                width: 50%;
+                background-color: $colorprimario;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .elemento-divider1{
+            display: flex;
+            background-color:$colorprimario;
+            width: 100%;
+            span{
+                width: 50%;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    .video-bodega{
+        display: flex;
+        flex-direction: row;
+        background-color: $colorterciario;
+        #video-bod{
+        display: flex;
+        justify-items: center;
+        margin-top: 0;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
         }
     }
     }

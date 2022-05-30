@@ -1060,8 +1060,45 @@ label {
     flex-direction: column;
     background-image: none;
     background-color: #F9E4D4; }
+    .primerospasos p, .nuestragente p, .produccion p {
+      width: 100%; }
     .primerospasos .img-cardsintro, .nuestragente .img-cardsintro, .produccion .img-cardsintro {
-      margin: auto; } }
+      margin: auto; }
+  .conteiner-bodega {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    background-image: linear-gradient(to bottom, white 10%, rgba(128, 25, 25, 0.849) 95%); }
+    .conteiner-bodega .elemento-divider {
+      display: flex;
+      background-color: black;
+      width: 100%; }
+      .conteiner-bodega .elemento-divider span {
+        width: 50%;
+        background-color: #470D21;
+        display: flex;
+        justify-content: center; }
+    .conteiner-bodega .elemento-divider1 {
+      display: flex;
+      background-color: #470D21;
+      width: 100%; }
+      .conteiner-bodega .elemento-divider1 span {
+        width: 50%;
+        background-color: black;
+        display: flex;
+        justify-content: center; }
+  .video-bodega {
+    display: flex;
+    flex-direction: row;
+    background-color: #F9E4D4; }
+    .video-bodega #video-bod {
+      display: flex;
+      justify-items: center;
+      margin-top: 0;
+      margin-bottom: 5%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%; } }
 
 @media only screen and (max-width: 600px) {
   .btn-flotante {
