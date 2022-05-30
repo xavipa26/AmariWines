@@ -271,7 +271,7 @@
       height: 30px;
       margin-bottom: 5px;
       box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.8);
-      overflow-y: hidden; }
+      margin-right: 10px; }
 
 /* CARDS INDEX */
 .cards-index {
